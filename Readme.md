@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Илья Никонов](https://up.htmlacademy.ru/htmlcss/27/user/1247925).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Жилин](https://htmlacademy.ru/profile/andreyka).
 
 ---
 
