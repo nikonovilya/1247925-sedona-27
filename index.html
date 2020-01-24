@@ -14,7 +14,7 @@
 
     <!-- МЕНЮ -->
 
-    <header class="header">
+    <header class="main-header">
       <nav class="main-nav">
         <ul class="main-nav__menu">
           <li class="main-nav__item">
@@ -25,7 +25,7 @@
           </li>
           <li class="main-nav__item logo">
             <a class="main-nav__item-link" href="#">
-              <img src="img/logo.svg" alt="Sedona logo" width="140" height="71">
+              <img class="logo__img" src="img/logo.svg" alt="Sedona logo" width="140" height="71">
             </a>
           </li>
           <li class="main-nav__item">
@@ -37,8 +37,18 @@
         </ul>
       </nav>
 
-      <img class="showcase-bg" src="img/background-photo.jpg" width="1200" height="800" alt="Sedona">
+      <!-- ФОН -- question="position: relative?;-->
 
+      <div class="background">
+        <div class="background__img">
+          <img class="main-bg" src="img/background-photo.jpg" width="1200" height="800" alt="Sedona">
+        </div>
+        <div class="background__bottom-part">
+          <!-- Вопрос: img/svg?; -->
+        </div>
+      </div>
+
+      <!-- ОФФЕР -- question="position: absolute?;"-->
 
       <div class="offer">
         <h1 class="visually-hidden">Седона, штат Аризона</h1>
@@ -53,25 +63,27 @@
       </section>
     </header>
 
-    <!-- ПРЕИМУЩЕСТВА -->
-        <!-- 1 -->
-        
+    <!-- ПРЕИМУЩЕСТВА display: flex;-->
+
+    <!-- 1 -->
+
     <main class="main-page">
       <section class="advantages  advantages--first">
+        <h1 class="visually-hidden">Преимущества Седоны</h1>
         <div class="advantages__info">
           <h2 class="advantages__title">Настоящий городок</h2>
           <span class="advantages__number">— №1 —</span>
           <p class="advantages__text">Седона — не аттракцион для туристов, там течет своя жизнь</p>
         </div>
         <div class="advantages__img  advantages__img--first">
-          <img src="img/feature-picture-1.jpg" width="800" height="256" alt="Седона">
+          <img class="developer__link-img" src="img/feature-picture-1.jpg" width="800" height="256" alt="Седона">
         </div>
       </section>
-      
-      <!-- 2 -->
-      
+
+      <!-- 2 -- display: flex;-->
+
       <section class="features">
-        <h2 class="visually-hidden">Особенности Седоны</h2>
+        <h1 class="visually-hidden">Особенности Седоны</h1>
         <ul class="features__list">
           <li class="features__item  features__item--house">
             <h3 class="features__item-title">Жилье</h3>
@@ -87,10 +99,11 @@
           </li>
         </ul>
       </section>
-      
-      <!-- 3 -->
-      
+
+      <!-- 3 -- display: flex; order: 1; -->
+
       <section class="advantages  advantages--second">
+        <h1 class="visually-hidden">Преимущества Седоны</h1>
         <div class="advantages__info">
           <h2 class="advantages__title">Там есть мост дьявола</h2>
           <span class="advantages__number">— №2 —</span>
@@ -100,9 +113,9 @@
           <img src="img/feature-picture-2.jpg" width="800" height="256" alt="Седона">
         </div>
       </section>
-      
-      <!-- 4 -->
-      
+
+      <!-- 4 -- display: flex;-->
+
       <section class="reasons">
         <h2 class="visually-hidden">Преимущества Седоны</h2>
         <ul class="reasons__list">
@@ -125,7 +138,7 @@
       </section>
 
       <!-- ПОИСК ГОСТИНИЦЫ -->
-      
+
       <section class="travel">
         <div class="travel__info">
           <h2 class="travel__title">Заинтересовались?</h2>
@@ -137,23 +150,23 @@
           <button class="travel__btn btn" type="submit">Поиск гостиницы в Седоне</button>
         </div>
       </section>
-      
-      <!-- КАРТА -->
-      
+
+      <!-- КАРТА question="IMG/CODE?-->
+
       <section class="map"></section>
     </main>
 
     <!-- ПОДВАЛ -->
 
     <footer class="main-footer">
-      <div class="main-footer__contacts">
+      <section class="main-footer__contacts">
         <div class="main-footer__contacts-instagram">
           <a class="instagram__link" href="#">#VisitSedona</a>
         </div>
-        <div class="main-footer__contacts-phone">
+        <div class="main-footer__contacts-phone phone">
           <a class="instagram__link" href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
         </div>
-        <div class="main-footer__social social">
+        <div class="main-footer__contacts-social social">
           <a class="social__link tw__link" href="#" target="_blank" title="Наша страница в Twitter">
           </a>
           <a class="social__link fb__link" href="#" target="_blank" title="Наша страница в Facebook">
@@ -161,13 +174,13 @@
           <a class="social__link yb__link" href="#" target="_blank" title="Наша страница на YouTube">
           </a>
         </div>
-        <div class="main-footer__developer developer">
-          <p class="developer__text">Website by</p>
+        <div class="main-footer__contacts-developer developer">
+          <span class="developer__text">Website by</span>
           <a class="developer__link" href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img/logo-footer.png" width="115" height="41" alt="HTML ACADEMY">
           </a>
         </div>
-      </div>
+      </section>
     </footer>
   </div>
 </body>

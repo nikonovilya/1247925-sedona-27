@@ -10,11 +10,11 @@
 </head>
 
 <body>
-  <div class="container">
+  < class="container">
 
     <!-- МЕНЮ -->
 
-    <header class="header">
+    <header class="main-header">
       <nav class="main-nav">
         <ul class="main-nav__menu">
           <li class="main-nav__item">
@@ -24,8 +24,8 @@
             <a class="main-nav__item-link" href="#">Фото и видео</a>
           </li>
           <li class="main-nav__item logo">
-            <a class="main-nav__item-link" href="#">
-              <img src="img/logo.svg" alt="Sedona logo" width="140" height="71">
+            <a class="main-nav__item--link" href="#">
+              <img class="logo__img" src="img/logo.svg" alt="Sedona logo" width="140" height="71">
             </a>
           </li>
           <li class="main-nav__item">
@@ -38,16 +38,17 @@
       </nav>
     </header>
 
-    <!-- НАЙДЕНЫЕ ГОСТИНИЦЫ -->
-          <!-- 1 -->
-          
-    <section class="hotels"> 
+    <!-- НАЙДЕНЫЕ ГОСТИНИЦЫ -- question="position: ?;-->
+
+    <!-- 1 -->
+
+    <section class="hotels">
       <ul class="hotels__list">
         <li class="hotels__item">
           <div class="hotels__item-photo">
             <img src="img/hotel-picture-1.jpg" width="135" height="90" alt="Amara Resort and Spa">
           </div>
-          <div class="hotels__item-desc">
+          <div class="hotels__item-description">
             <a class="hotels__item-name" href="#">Amara Resort & Spa</a>
             <div class="hotels__item-info">
               <div class="hotels__item-type">Гостиница</div>
@@ -60,6 +61,7 @@
           </div>
           <div class="hotels__item-rating">
             <div class="hotels__item-stars">
+              <!-- font-size: 0; background-image: url("..//img/star.svg"); -->
               <span class="star">*</span>
               <span class="star">*</span>
               <span class="star">*</span>
@@ -75,7 +77,7 @@
           <div class="hotels__item-photo">
             <img src="img/hotel-picture-2.jpg" width="135" height="90" alt="Desert Quail Inn">
           </div>
-          <div class="hotels__item-desc">
+          <div class="hotels__item-description">
             <a class="hotels__item-name" href="#">Desert Quail Inn</a>
             <div class="hotels__item-info">
               <div class="hotels__item-type">Мотель</div>
@@ -102,7 +104,7 @@
           <div class="hotels__item-photo">
             <img src="img/hotel-picture-3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
           </div>
-          <div class="hotels__item-desc">
+          <div class="hotels__item-description">
             <a class="hotels__item-name" href="#">Villas at Poco Diablo</a>
             <div class="hotels__item-info">
               <div class="hotels__item-type">Апартаменты</div>
@@ -127,14 +129,14 @@
     <!-- ПОДВАЛ -->
 
     <footer class="main-footer">
-      <div class="main-footer__contacts">
-        <div class="main-footer__contacts-instagram">
+      <section class="main-footer__contacts">
+        <div class="main-footer__contacts-instagram instagram">
           <a class="instagram__link" href="#">#VisitSedona</a>
         </div>
-        <div class="main-footer__contacts-phone">
+        <div class="main-footer__contacts-phone phone">
           <a class="instagram__link" href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
         </div>
-        <div class="main-footer__social social">
+        <div class="main-footer__contacts-social social">
           <a class="social__link tw__link" href="#" target="_blank" title="Наша страница в Twitter">
           </a>
           <a class="social__link fb__link" href="#" target="_blank" title="Наша страница в Facebook">
@@ -142,16 +144,16 @@
           <a class="social__link yb__link" href="#" target="_blank" title="Наша страница на YouTube">
           </a>
         </div>
-        <div class="main-footer__developer developer">
+        <div class="main-footer__contacts-developer developer">
           <p class="developer__text">Website by</p>
           <a class="developer__link" href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/logo-footer.png" width="115" height="41" alt="HTML ACADEMY">
+            <img class="developer__link-img" src="img/logo-footer.png" width="115" height="41" alt="HTML ACADEMY">
           </a>
         </div>
-      </div>
+      </section>
     </footer>
 
-  </div>
+    </div>
 </body>
 
 </html>
