@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,60 +16,72 @@
 
     <header class="main-header">
       <nav class="main-nav">
-        <ul class="main-nav__menu">
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="#">Информация</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="#">Фото и видео</a>
-          </li>
-          <li class="main-nav__item logo">
-            <a class="main-nav__item-link" href="#">
-              <img class="logo__img" src="img/logo.svg" alt="Sedona logo" width="140" height="71">
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="#">Карта штата</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__item-link" href="catalog.html">Гостиницы</a>
-          </li>
-        </ul>
+        <div class="main-nav__left">
+          <ul class="main-nav__menu">
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="#">Информация</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="#">Фото и видео</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-nav__logo logo">
+          <a class="main-nav__logo-link" href="#">
+            <img class="logo__img" src="img/logo.svg" alt="Sedona logo" width="140" height="71">
+          </a>
+        </div>
+        <div class="main-nav__right">
+          <ul class="main-nav__menu">
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="#">Карта штата</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-
-      <!-- ФОН -- question="position: relative?;-->
-
-      <div class="background">
-        <div class="background__img">
-          <img class="main-bg" src="img/background-photo.jpg" width="1200" height="800" alt="Sedona">
-        </div>
-        <div class="background__bottom-part">
-          <!-- Вопрос: img/svg?; -->
-        </div>
-      </div>
-
-      <!-- ОФФЕР -- question="position: absolute?;"-->
-
-      <div class="offer">
-        <h1 class="visually-hidden">Седона, штат Аризона</h1>
-        <img class="offer__img" src="img/welcome.svg" width="459" height="353"
-          alt="Wellcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
-      </div>
-      <section class="about">
-        <div class="about__info">
-          <h2 class="about__title">Седона — небольшой городок в Аризоне, зaслуживающий большего!</h2>
-          <p class="about__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        </div>
-      </section>
     </header>
 
-    <!-- ПРЕИМУЩЕСТВА display: flex;-->
-
-    <!-- 1 -->
 
     <main class="main-page">
+
+      <!-- ФОН -->
+
+      <!-- <div class="background">
+        <div class="background__img">
+          <img src="img/background-photo.jpg" width="1200" height="800" alt="Sedona">
+        </div>
+        <div class="background__bottom-part">
+          Вопрос: img/svg?;
+        </div>
+      </div> -->
+
+      <!-- ОФФЕР -->
+
+      <section class="offer">
+        <h1 class="visually-hidden">Седона, штат Аризона</h1>
+        <div class="offer">
+          <img class="offer__img" src="img/welcome.svg" width="459" height="353"
+            alt="Wellcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="about__info">
+          <h2 class="about__info-title">Седона — небольшой городок в Аризоне, зaслуживающий большего!</h2>
+          <p class="about__info-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
+      </section>
+
+
+      <!-- ПРЕИМУЩЕСТВА display: flex;-->
+
+      <!-- 1 -->
+
       <section class="advantages  advantages--first">
-        <h1 class="visually-hidden">Преимущества Седоны</h1>
+        <h2 class="visually-hidden">Преимущества Седоны</h2>
         <div class="advantages__info">
           <h2 class="advantages__title">Настоящий городок</h2>
           <span class="advantages__number">— №1 —</span>
@@ -83,7 +95,7 @@
       <!-- 2 -- display: flex;-->
 
       <section class="features">
-        <h1 class="visually-hidden">Особенности Седоны</h1>
+        <h2 class="visually-hidden">Особенности Седоны</h2>
         <ul class="features__list">
           <li class="features__item  features__item--house">
             <h3 class="features__item-title">Жилье</h3>
@@ -103,11 +115,11 @@
       <!-- 3 -- display: flex; order: 1; -->
 
       <section class="advantages  advantages--second">
-        <h1 class="visually-hidden">Преимущества Седоны</h1>
+        <h2 class="visually-hidden">Преимущества Седоны</h2>
         <div class="advantages__info">
-          <h2 class="advantages__title">Там есть мост дьявола</h2>
+          <h3 class="advantages__title">Там есть мост дьявола</h3>
           <span class="advantages__number">— №2 —</span>
-          <p class="advantages__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          <p class="advantages__text">Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
         </div>
         <div class="advantages__img  advantages__img--second">
           <img src="img/feature-picture-2.jpg" width="800" height="256" alt="Седона">
@@ -151,7 +163,7 @@
         </div>
       </section>
 
-      <!-- КАРТА question="IMG/CODE?-->
+      <!-- КАРТА -->
 
       <section class="map"></section>
     </main>
@@ -159,7 +171,7 @@
     <!-- ПОДВАЛ -->
 
     <footer class="main-footer">
-      <section class="main-footer__contacts">
+      <div class="main-footer__contacts">
         <div class="main-footer__contacts-instagram">
           <a class="instagram__link" href="#">#VisitSedona</a>
         </div>
@@ -180,7 +192,7 @@
             <img src="img/logo-footer.png" width="115" height="41" alt="HTML ACADEMY">
           </a>
         </div>
-      </section>
+      </div>
     </footer>
   </div>
 </body>
