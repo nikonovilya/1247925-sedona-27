@@ -1,12 +1,200 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-  </body>
+<body>
+  <div class="container">
+
+    <!-- МЕНЮ -->
+
+    <header class="main-header">
+      <nav class="main-nav">
+        <div class="main-nav__left">
+          <ul class="main-nav__menu">
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="#">Информация</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="#">Фото и видео</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-nav__logo logo">
+          <a class="main-nav__logo-link" href="#">
+            <img class="logo__img" src="img/logo.svg" alt="Sedona logo" width="140" height="71">
+          </a>
+        </div>
+        <div class="main-nav__right">
+          <ul class="main-nav__menu">
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="#">Карта штата</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+    <main class="main-page">
+
+      <!-- ФОН -->
+
+      <!-- <div class="background">
+        <div class="background__img">
+          <img src="img/background-photo.jpg" width="1200" height="800" alt="Sedona">
+        </div>
+        <div class="background__bottom-part">
+          Вопрос: img/svg?;
+        </div>
+      </div> -->
+
+      <!-- ОФФЕР -->
+
+      <section class="offer">
+        <h1 class="visually-hidden">Седона, штат Аризона</h1>
+        <div class="offer">
+          <img class="offer__img" src="img/welcome.svg" width="459" height="353"
+            alt="Wellcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="about__info">
+          <h2 class="about__info-title">Седона — небольшой городок в Аризоне, зaслуживающий большего!</h2>
+          <p class="about__info-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
+      </section>
+
+
+      <!-- ПРЕИМУЩЕСТВА display: flex;-->
+
+      <!-- 1 -->
+
+      <section class="advantages  advantages--first">
+        <h2 class="visually-hidden">Преимущества Седоны</h2>
+        <div class="advantages__info">
+          <h2 class="advantages__title">Настоящий городок</h2>
+          <span class="advantages__number">— №1 —</span>
+          <p class="advantages__text">Седона — не аттракцион для туристов, там течет своя жизнь</p>
+        </div>
+        <div class="advantages__img  advantages__img--first">
+          <img class="developer__link-img" src="img/feature-picture-1.jpg" width="800" height="256" alt="Седона">
+        </div>
+      </section>
+
+      <!-- 2 -- display: flex;-->
+
+      <section class="features">
+        <h2 class="visually-hidden">Особенности Седоны</h2>
+        <ul class="features__list">
+          <li class="features__item  features__item--house">
+            <h3 class="features__item-title">Жилье</h3>
+            <p class="features__item-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </li>
+          <li class="features__item  features__item--food">
+            <h3 class="features__item-title">Еда</h3>
+            <p class="features__item-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="features__item  features__item--souvenirs">
+            <h3 class="features__item-title">Сувениры</h3>
+            <p class="features__item-text">Не только китайского, но и местного производства!</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 3 -- display: flex; order: 1; -->
+
+      <section class="advantages  advantages--second">
+        <h2 class="visually-hidden">Преимущества Седоны</h2>
+        <div class="advantages__info">
+          <h3 class="advantages__title">Там есть мост дьявола</h3>
+          <span class="advantages__number">— №2 —</span>
+          <p class="advantages__text">Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
+        </div>
+        <div class="advantages__img  advantages__img--second">
+          <img src="img/feature-picture-2.jpg" width="800" height="256" alt="Седона">
+        </div>
+      </section>
+
+      <!-- 4 -- display: flex;-->
+
+      <section class="reasons">
+        <h2 class="visually-hidden">Преимущества Седоны</h2>
+        <ul class="reasons__list">
+          <li class="reasons__item">
+            <h3 class="reasons__item-title">Небольшая площадь</h3>
+            <span class="reasons__item-number">— №3 —</span>
+            <p class="reasons__item-text">Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="reasons__item">
+            <h3 class="reasons__item-title">Красивая дорога</h3>
+            <span class="reasons__item-number">— №4 —</span>
+            <p class="reasons__item-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="reasons__item">
+            <h3 class="reasons__item-title">Мало туристов</h3>
+            <span class="reasons__item-number">— №5 —</span>
+            <p class="reasons__item-text">Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ПОИСК ГОСТИНИЦЫ -->
+
+      <section class="travel">
+        <div class="travel__info">
+          <h2 class="travel__title">Заинтересовались?</h2>
+          <p class="travel__text">
+            Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне
+          </p>
+        </div>
+        <div class="travel__search">
+          <button class="travel__btn btn" type="submit">Поиск гостиницы в Седоне</button>
+        </div>
+      </section>
+
+      <!-- КАРТА -->
+
+      <section class="map"></section>
+    </main>
+
+    <!-- ПОДВАЛ -->
+
+    <footer class="main-footer">
+      <div class="main-footer__contacts">
+        <div class="main-footer__contacts-instagram">
+          <a class="instagram__link" href="#">#VisitSedona</a>
+        </div>
+        <div class="main-footer__contacts-phone phone">
+          <a class="instagram__link" href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
+        </div>
+        <div class="main-footer__contacts-social social">
+          <a class="social__link tw__link" href="#" target="_blank" title="Наша страница в Twitter">
+          </a>
+          <a class="social__link fb__link" href="#" target="_blank" title="Наша страница в Facebook">
+          </a>
+          <a class="social__link yb__link" href="#" target="_blank" title="Наша страница на YouTube">
+          </a>
+        </div>
+        <div class="main-footer__contacts-developer developer">
+          <span class="developer__text">Website by</span>
+          <a class="developer__link" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo-footer.png" width="115" height="41" alt="HTML ACADEMY">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>

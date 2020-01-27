@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- МЕНЮ -->
+
+    <header class="main-header">
+      <nav class="main-nav">
+        <div class="main-nav__left">
+          <ul class="main-nav__menu">
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="#">Информация</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="#">Фото и видео</a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-nav__logo">
+          <a class="main-nav__logo-link logo" href="#">
+            <img class="logo__img" src="img/logo.svg" alt="Sedona logo" width="140" height="71">
+          </a>
+        </div>
+        <div class="main-nav__right">
+          <ul class="main-nav__menu">
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="#">Карта штата</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- НАЙДЕНЫЕ ГОСТИНИЦЫ -- question="position: ?;-->
+
+    <!-- 1 -->
+
+    <section class="hotels">
+      <h1 class="visually-hidden">Отели Седоны</h1>
+      <ul class="hotels__list">
+        <li class="hotels__item">
+          <div class="hotels__item-photo">
+            <img src="img/hotel-picture-1.jpg" width="135" height="90" alt="Amara Resort and Spa">
+          </div>
+          <div class="hotels__item-description">
+            <h3 class="hotels__item-name">
+              <a class="hotels__item-link" href="#">Amara Resort & Spa</a>
+            </h3>
+            <div class="hotels__item-info">
+              <span class="hotels__item-type">Гостиница</span>
+              <a class="hotels__item-info  btn" href="#">Подробнее</a>
+            </div>
+            <div class="hotels__item-details">
+              <span class="hotels__item-price">от 4000 p.</span>
+              <a class="hotels__item-btn  btn" href="#">Забронировать</a>
+            </div>
+          </div>
+          <div class="hotels__item-rating">
+            <div class="hotels__item-stars">
+              <!-- font-size: 0; background-image: url("..//img/star.svg"); -->
+              <span class="star">*</span>
+              <span class="star">*</span>
+              <span class="star">*</span>
+              <span class="star">*</span>
+            </div>
+            <span class="rating">Рейтинг: 8,5</span>
+          </div>
+        </li>
+
+        <!-- 2 -->
+
+        <li class="hotels__item">
+          <div class="hotels__item-photo">
+            <img src="img/hotel-picture-2.jpg" width="135" height="90" alt="Desert Quail Inn">
+          </div>
+          <div class="hotels__item-description">
+            <h3 class="hotels__item-name">
+              <a class="hotels__item-link" href="#">Desert Quail Inn</a>
+            </h3>
+            <div class="hotels__item-info">
+              <span class="hotels__item-type">Мотель</span>
+              <a class="hotels__item-info  btn" href="#">Подробнее</a>
+            </div>
+            <div class="hotels__item-details">
+              <span class="hotels__item-price">от 3000 p.</span>
+              <a class="hotels__item-btn  btn" href="#">Забронировать</a>
+            </div>
+          </div>
+
+          <div class="hotels__item-rating">
+            <div class="hotels__item-stars">
+              <span class="star">*</span>
+              <span class="star">*</span>
+              <span class="star">*</span>
+            </div>
+            <span class="rating">Рейтинг: 8,9</span>
+          </div>
+        </li>
+
+        <!-- 3 -->
+
+        <li class="hotels__item">
+          <div class="hotels__item-photo">
+            <img src="img/hotel-picture-3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
+          </div>
+          <div class="hotels__item-description">
+            <h3 class="hotels__item-name">
+              <a class="hotels__item-link" href="#">Villas at Poco Diablo</a>
+            </h3>
+            <div class="hotels__item-info">
+              <span class="hotels__item-type">Апартаменты</span>
+              <a class="hotels__item-info  btn" href="#">Подробнее</a>
+            </div>
+            <div class="hotels__item-details">
+              <span class="hotels__item-price">от 2000 p.</span>
+              <a class="hotels__item-btn  btn" href="#">Забронировать</a>
+            </div>
+          </div>
+
+          <div class="hotels__item-rating">
+            <div class="hotels__item-stars">
+              <span class="star">*</span>
+              <span class="star">*</span>
+            </div>
+            <span class="rating">Рейтинг: 9,2</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ПОДВАЛ -->
+
+    <footer class="main-footer">
+      <div class="main-footer__contacts">
+        <div class="main-footer__contacts-instagram instagram">
+          <a class="instagram__link" href="#">#VisitSedona</a>
+        </div>
+        <div class="main-footer__contacts-phone phone">
+          <a class="instagram__link" href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
+        </div>
+        <div class="main-footer__contacts-social social">
+          <a class="social__link tw__link" href="#" target="_blank" title="Наша страница в Twitter">
+          </a>
+          <a class="social__link fb__link" href="#" target="_blank" title="Наша страница в Facebook">
+          </a>
+          <a class="social__link yb__link" href="#" target="_blank" title="Наша страница на YouTube">
+          </a>
+        </div>
+        <div class="main-footer__contacts-developer developer">
+          <p class="developer__text">Website by</p>
+          <a class="developer__link" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img class="developer__link-img" src="img/logo-footer.png" width="115" height="41" alt="HTML ACADEMY">
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</body>
+
+</html>
