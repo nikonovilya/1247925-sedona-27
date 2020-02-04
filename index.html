@@ -148,21 +148,65 @@
       <!-- ПОИСК ГОСТИНИЦЫ -->
 
       <section class="travel">
+        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
         <div class="travel__info">
           <h2 class="travel__title">Заинтересовались?</h2>
           <p class="travel__text">
             Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
         </div>
+
+        <!-- ФОРМА -->
+
+        <!-- background: url("img/calendar.svg") no-repeat 100% 50%; -->
+
         <div class="travel__search">
-          <button class="travel__btn btn" type="button">Поиск гостиницы в Седоне</button>
+          <div class="travel__search__btn-wrapper">
+            <button class="travel__search__btn btn" type="button">Поиск гостиницы в Седоне</button>
+          </div>
+          <div class="travel__search__modal-window">
+            <form class="travel__search__form form" action="#" method="POST">
+              <div class="form__date__arrival">
+                <label class="form__date__arrival-label" for="date-arrival">Дата заезда:</label>
+                <input class="form__date__arrival-input" type="text" id="date-arrival" name="date-arrival" placeholder="24 апреля 2017">
+              </div>
+              <div class="form__date__departure">
+                <label class="form__date__departure-label" for="date-departure">Дата выезда:</label>
+                <input class="form__date__departure-input" type="text" id="date-departure" name="date-departure" placeholder="4 июля 2017">
+              </div>
+              <div class="form__number-people">
+                <div class="form__number-adults adults">
+                  <label class="adults__label" for="adults">Взрослые:</label>
+                  <div class="adults__btn">
+                    <div class="adults__btn-wrapper">
+                      <button class="btn__low btn" type="button"></button>
+                      <input class="adults__number" type="text" id="adults" name="adults" value="2">
+                      <button class="btn__hight btn" type="button"></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__number-kids kids">
+                  <label class="kids__label" for="adults">Дети:</label>
+                  <div class="kids__btn">
+                    <div class="kids__btn-wrapper">
+                      <button class="btn__low btn" type="button"></button>
+                      <input class="kids__number" type="text" id="kids" name="kids" value="0">
+                      <button class="btn__hight btn" type="button"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="travel__search__form-btn btn" type="submit" name="search-btn">
+                Найти
+              </button>
+            </form>
+          </div>
         </div>
       </section>
 
       <!-- КАРТА -->
 
       <section class="map"></section>
-      <!-- background: url("img/calendar.svg") no-repeat 100% 50%; -->
     </main>
 
     <!-- ПОДВАЛ -->

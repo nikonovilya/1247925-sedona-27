@@ -40,12 +40,111 @@
       </nav>
     </header>
 
+    <!-- ФИЛЬТРЫ -->
+    <section class="filters">
+      <h1 class="visually-hidden">Поиск отелей в Седоне</h1>
+      <form class="filters__form">
+        <div class="filters__wrapper">
+          <div class="filters__options">
+            <fieldset class="filters__fieldset">
+              <legend class="filters__legend">Инфраструктура:</legend>
+              <ul class="filters__list">
+                <li class="filters__item">
+                  <input class="filters__checkbox-input" type="checkbox" id="pool" checked name="pool">
+                  <label class="filters__checkbox-label" for="pool">Бассейн</label>
+                </li>
+                <li class="filters__item">
+                  <input class="filters__checkbox-input" type="checkbox" id="parking" name="parking">
+                  <label class="filters__checkbox-label" for="parking">Парковка</label>
+                </li>
+                <li class="filters__item">
+                  <input class="filters__checkbox-input" type="checkbox" id="wi-fi" name="wi-fi">
+                  <label class="filters__checkbox-label" for="wi-fi">WI-FI</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="filters__options">
+            <fieldset>
+              <legend class="filters__legend">Тип жилья:</legend>
+              <ul class="filters__list">
+                <li class="filters__item">
+                  <input class="filters__checkbox-input" type="checkbox" name="hotel" id="hotel" checked>
+                  <label class="filters__checkbox-label" for="hotel">Гостиница</label>
+                </li>
+                <li class="filters__item">
+                  <input class="filters__checkbox-input" type="checkbox" name="motel" id="motel" checked>
+                  <label class="filters__checkbox-label" for="motel">Мотель</label>
+                </li>
+                <li class="filters__item">
+                  <input class="filters__checkbox-input" type="checkbox" name="apartments" id="apartments" checked>
+                  <label class="filters__checkbox-label" for="apartments">Апартаменты</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="filters__price">
+            <fildset class="filters__price-fieldset">
+              <legend class="filters__price-legend">Стоимость в сутки (p):</legend>
+              <div class="filters__price-value">
+                <!-- ВОПРОС="Как связять 2 блока? Как оформить?" -->
+              </div>
+              <div class="filters__price-range">
+                <!-- ВОПРОС="Как связять 2 блока? Как оформить?" -->
+              </div>
+            </fildset>
+            <div class="filters__apply">
+              <button class="filters__show  filter-btn" type="submit">Показать</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+    
     <!-- НАЙДЕНЫЕ ГОСТИНИЦЫ -->
 
-    <!-- 1 -->
-
     <section class="hotels">
-      <h1 class="visually-hidden">Отели Седоны</h1>
+      <div class="hotels__sorting">
+        <div class="hotels__sorting-title">
+          <h2 class="visually-hidden">Сортировка результатов</h2>
+          <div class="hotels__sorting-result-title">
+            Найдено:<span class="hotels__sorting-result-total">3</span>
+          </div>
+        </div>
+        <div class="hotel__sotring-items">
+          <ul class="hotels__sorting-list">
+            <li class="hotels__sorting-list-title">
+              Сортировка:
+            </li>
+            <li class="hotels__sorting-item">
+              <a class="hotels__sorting-link  hotels__sorting-link-active" href="#">По цене</a>
+            </li>
+            <li class="hotels__sorting-item">
+              <a class="hotels__sorting-link" href="#">По типу</a>
+            </li>
+            <li class="hotels__sorting-item">
+              <a class="hotels__sorting-link" href="#">По рейтингу</a>
+            </li>
+          </ul> 
+        </div>
+        <div class="hotels__sorting-updown">
+          <ul class="hotels__sorting-updown-list">
+            <li class="hotels__sorting-updown-item">
+              <a class="hotels__sorting-updown-link link-up" href="#">По возрастанию</a>
+            </li>
+            <li class="hotels__sorting-updown-item">
+              <a class="hotels__sorting-updown-link link-down  hotels__sorting-updown-active" href="#">
+                По убыванию</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      
+      
+       <!-- 1 -->
+       
+      <h2 class="visually-hidden">Отели Седоны</h2>
       <ul class="hotels__list">
         <li class="hotels__item">
           <div class="hotels__item-photo">
