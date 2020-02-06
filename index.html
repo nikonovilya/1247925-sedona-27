@@ -17,7 +17,7 @@
     <header class="main-header">
       <nav class="main-nav">
         <div class="main-nav__logo logo">
-          <a class="main-nav__logo-link" href="#">
+          <a class="main-nav__logo-link" href="index.html">
             <img class="logo__img" src="img/logo.svg" alt="Sedona logo" width="140" height="71">
           </a>
         </div>
@@ -110,15 +110,15 @@
 
       <!-- 3 -- display: flex; order: 1; -->
 
-      <section class="advantages  advantages--second">
+      <section class="advantages  advantages-second">
         <h2 class="visually-hidden">Преимущества Седоны</h2>
         <div class="advantages__info">
           <h3 class="advantages__title">Там есть мост дьявола</h3>
           <span class="advantages__number">— №2 —</span>
           <p class="advantages__text">Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
         </div>
-        <div class="advantages__img  advantages__img--second">
-          <img src="img/feature-picture-2.jpg" width="800" height="256" alt="Седона">
+        <div class="advantages__img  advantages__img-second">
+          <img class="advantages__img-photo" src="img/feature-picture-2.jpg" width="800" height="256" alt="Седона">
         </div>
       </section>
 
@@ -148,14 +148,76 @@
       <!-- ПОИСК ГОСТИНИЦЫ -->
 
       <section class="travel">
+        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
         <div class="travel__info">
           <h2 class="travel__title">Заинтересовались?</h2>
           <p class="travel__text">
             Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
         </div>
+
+        <!-- ФОРМА -->
+
+        <!-- background: url("img/calendar.svg") no-repeat 100% 50%; -->
+
         <div class="travel__search">
-          <button class="travel__btn btn" type="submit">Поиск гостиницы в Седоне</button>
+          <div class="travel__search__btn-wrapper">
+            <button class="travel__search__btn btn" type="button">Поиск гостиницы в Седоне</button>
+          </div>
+          <div class="travel__search__modal-window">
+            <form class="travel__search__form form" action="#" method="POST">
+              <div class="form__date__arrival">
+                <label class="form__date__arrival-label" for="date-arrival">Дата заезда:</label>
+                <input class="form__date__arrival-input" type="text" id="date-arrival" name="date-arrival"
+                  placeholder="24 апреля 2017">
+                <button class="form__date__arrival-calendar" type="button" name="calendar">
+                  <svg class="form__date__arrival-calendar-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                    <path
+                      d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
+                    <path
+                      d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
+                  </svg>
+                </button>
+              </div>
+              <div class="form__date__departure">
+                <label class="form__date__departure-label" for="date-departure">Дата выезда:</label>
+                <input class="form__date__departure-input" type="text" id="date-departure" name="date-departure" placeholder="4 июля 2017">
+                <button class="form__date__arrival-calendar" type="button" name="calendar">
+                  <svg class="form__date__arrival-calendar-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
+                    <path
+                      d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
+                    <path
+                      d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
+                  </svg>
+                </button>
+              </div>
+              <div class="form__number-people">
+                <div class="form__number-adults adults">
+                  <label class="adults__label" for="adults">Взрослые:</label>
+                  <div class="adults__btn">
+                    <div class="adults__btn-wrapper">
+                      <button class="btn__low btn" type="button"></button>
+                      <input class="adults__number" type="text" id="adults" name="adults" value="2">
+                      <button class="btn__hight btn" type="button"></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__number-kids kids">
+                  <label class="kids__label" for="adults">Дети:</label>
+                  <div class="kids__btn">
+                    <div class="kids__btn-wrapper">
+                      <button class="btn__low btn" type="button"></button>
+                      <input class="kids__number" type="text" id="kids" name="kids" value="0">
+                      <button class="btn__hight btn" type="button"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="travel__search__form-btn btn" type="submit" name="search-btn">
+                Найти
+              </button>
+            </form>
+          </div>
         </div>
       </section>
 
