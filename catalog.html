@@ -17,7 +17,7 @@
     <header class="main-header">
       <nav class="main-nav">
         <div class="main-nav__logo logo">
-          <a class="main-nav__logo-link" href="#">
+          <a class="main-nav__logo-link" href="index.html">
             <img class="logo__img" src="img/logo.svg" alt="Sedona logo" width="140" height="71">
           </a>
         </div>
@@ -43,14 +43,14 @@
     <!-- ФИЛЬТРЫ -->
     <section class="filters">
       <h1 class="visually-hidden">Поиск отелей в Седоне</h1>
-      <form class="filters__form">
+      <form class="filters__form" action="#" method="GET">
         <div class="filters__wrapper">
           <div class="filters__options">
             <fieldset class="filters__fieldset">
               <legend class="filters__legend">Инфраструктура:</legend>
               <ul class="filters__list">
                 <li class="filters__item">
-                  <input class="filters__checkbox-input" type="checkbox" id="pool" checked name="pool">
+                  <input class="filters__checkbox-input" type="checkbox" id="pool" name="pool" checked>
                   <label class="filters__checkbox-label" for="pool">Бассейн</label>
                 </li>
                 <li class="filters__item">
@@ -69,15 +69,15 @@
               <legend class="filters__legend">Тип жилья:</legend>
               <ul class="filters__list">
                 <li class="filters__item">
-                  <input class="filters__checkbox-input" type="checkbox" name="hotel" id="hotel" checked>
+                  <input class="filters__checkbox-input" type="checkbox" id="hotel" name="hotel" checked>
                   <label class="filters__checkbox-label" for="hotel">Гостиница</label>
                 </li>
                 <li class="filters__item">
-                  <input class="filters__checkbox-input" type="checkbox" name="motel" id="motel" checked>
+                  <input class="filters__checkbox-input" type="checkbox" id="motel" name="motel" checked>
                   <label class="filters__checkbox-label" for="motel">Мотель</label>
                 </li>
                 <li class="filters__item">
-                  <input class="filters__checkbox-input" type="checkbox" name="apartments" id="apartments" checked>
+                  <input class="filters__checkbox-input" type="checkbox" id="apartments" name="apartments" checked>
                   <label class="filters__checkbox-label" for="apartments">Апартаменты</label>
                 </li>
               </ul>
@@ -87,10 +87,19 @@
             <fildset class="filters__price-fieldset">
               <legend class="filters__price-legend">Стоимость в сутки (p):</legend>
               <div class="filters__price-value">
-                <!-- ВОПРОС="Как связять 2 блока? Как оформить?" -->
+                <label class="filters__price-label  filters__price-label-min">От<input
+                    class="filters__price-input  filters__price-input-min" type="text" value="0" name="min-price-input">
+                </label>
+                <label class="filters__price-label  filters__price-label-max">До<input
+                    class="filters__price-input  filters__price-input-max" type="text" value="3000"
+                    name="min-price-input">
+                </label>
               </div>
               <div class="filters__price-range">
-                <!-- ВОПРОС="Как связять 2 блока? Как оформить?" -->
+                <div class="filters__price-scale value"></div>
+                <!-- font-size: 0; -->
+                <span class="filters__price-control  filters__price-control-min" tabindex="0">Минимум</span>
+                <span class="filters__price-control  filters__price-control-max" tabindex="0">Максимум</span>
               </div>
             </fildset>
             <div class="filters__apply">
@@ -100,7 +109,7 @@
         </div>
       </form>
     </section>
-    
+
     <!-- НАЙДЕНЫЕ ГОСТИНИЦЫ -->
 
     <section class="hotels">
@@ -112,10 +121,10 @@
           </div>
         </div>
         <div class="hotel__sotring-items">
+          <span class="hotels__sorting-title">
+            Сортировка:
+          </span>
           <ul class="hotels__sorting-list">
-            <li class="hotels__sorting-list-title">
-              Сортировка:
-            </li>
             <li class="hotels__sorting-item">
               <a class="hotels__sorting-link  hotels__sorting-link-active" href="#">По цене</a>
             </li>
@@ -125,7 +134,7 @@
             <li class="hotels__sorting-item">
               <a class="hotels__sorting-link" href="#">По рейтингу</a>
             </li>
-          </ul> 
+          </ul>
         </div>
         <div class="hotels__sorting-updown">
           <ul class="hotels__sorting-updown-list">
@@ -139,16 +148,14 @@
           </ul>
         </div>
       </div>
-      
-      
-      
-       <!-- 1 -->
-       
+
+      <!-- 1 -->
+
       <h2 class="visually-hidden">Отели Седоны</h2>
       <ul class="hotels__list">
         <li class="hotels__item">
           <div class="hotels__item-photo">
-            <img src="img/hotel-picture-1.jpg" width="135" height="90" alt="Amara Resort and Spa">
+            <img class="hotels__item-img" src="img/hotel-picture-1.jpg" width="135" height="90" alt="Amara Resort and Spa">
           </div>
           <div class="hotels__item-description">
             <h3 class="hotels__item-name">
@@ -179,7 +186,7 @@
 
         <li class="hotels__item">
           <div class="hotels__item-photo">
-            <img src="img/hotel-picture-2.jpg" width="135" height="90" alt="Desert Quail Inn">
+            <img class="hotels__item-img" src="img/hotel-picture-2.jpg" width="135" height="90" alt="Desert Quail Inn">
           </div>
           <div class="hotels__item-description">
             <h3 class="hotels__item-name">
@@ -209,7 +216,7 @@
 
         <li class="hotels__item">
           <div class="hotels__item-photo">
-            <img src="img/hotel-picture-3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
+            <img class="hotels__item-img" src="img/hotel-picture-3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
           </div>
           <div class="hotels__item-description">
             <h3 class="hotels__item-name">
