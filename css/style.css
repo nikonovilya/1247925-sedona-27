@@ -1,0 +1,279 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Pt Sans, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333;
+  background-color: #f2f2f2;
+}
+
+.container {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
+}
+
+.visually-hidden {
+  display: none;
+}
+
+/* МЕНЮ */
+
+.main-nav__menu-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.main-nav__item { 
+  display: flex;
+  width: 240px;
+  height: 56px;
+  line-height: 26px;
+  align-items: center;
+}
+
+.main-nav__item:first-child {
+  margin-right: 0;
+}
+
+.main-nav__item:nth-child(2) {
+  margin-right: auto;
+}
+
+.main-nav__item:last-child {
+  margin-left: 0;
+}
+
+.main-nav__item:nth-child(3) {
+  margin-left: auto;
+}
+
+.main-nav__item-link {
+  text-decoration: none;
+  color: #000;
+}
+
+
+.main-nav__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-70px);
+}
+
+/* ОФФЕР */
+
+.offer__wrapper { 
+  padding-top: 76px;
+  padding-bottom: 80px;
+  width: 1200px;
+  height: 442px;    
+  background-color: #fff;
+  background-image: url("..//img/background-photo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.offer__wrapper::before  { 
+  content: "";
+  position: absolute;
+  display: block;
+  margin-top: 465px;
+  width: 1200px;
+  height: 59px;    
+  background-image: url("..//img/background-bottom-part.svg");
+  background-repeat: no-repeat; 
+  background-size: cover; 
+}
+
+.offer__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about {
+  position: relative;
+  text-align: center;
+  background-color: #fff;
+  padding: 61px 0 56px;
+}
+  
+
+.about__info {
+  max-width: 490px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.about__info-title {
+  margin: 0 0 38px 0;
+  font-size: 21px;
+  line-height: 26px;
+  
+}
+.about__info-text {
+  margin: 0;
+  line-height: 26px;    
+}
+
+/* ПОИСК ГОСТИНИЦЫ */
+
+.travel { 
+  background-color: #fff;
+}
+
+.travel__info {
+  text-align: center;
+  max-width: 440px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 57px;
+  margin-bottom: 52px;
+  
+}
+.travel__title {
+  font-size: 30px;
+  font-weight: 700;
+}
+.travel__text {
+  line-height: 24px;
+}
+
+.travel__search__btn-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+        
+}
+
+.travel__search__btn {
+  background-color: #766357;
+  color: #fff;
+  width: 568px;
+  height: 86px;
+  font-size: 21px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+}
+
+
+/* ПОДВАЛ */ 
+
+main-footer {
+  background-color: #fff;
+}
+
+.main-footer__contacts {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 33px;
+  padding-bottom: 30px;
+}
+
+.main-footer__contacts:first-child {
+  margin-left: 132px;
+}
+
+.main-footer__contacts:last-child {
+  margin-right: 101px;
+}
+
+main-footer__contacts-left-column {
+  display: flex;
+  font-size: 21px;
+  line-height: 26px;
+  flex-direction: column;
+}
+
+.main-footer__contacts-left-column a {
+  text-decoration: none;
+  color: #111;
+  font-size: 21px;
+  font-weight: 700; 
+}
+
+main-footer__contacts-instagram { 
+
+}
+
+.main-footer__contacts-phone {
+  margin-top: 10px;
+}
+
+
+.social {
+  display: flex;
+  max-width: 150px;
+  margin-right: 68px;
+}
+
+.social__link {
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+  text-align: center;
+}
+
+.social__link:nth-child(2) {
+  margin-right: 6px;
+  margin-left: 6px;
+
+}
+
+.tw__link {
+  width:46px;
+  height:48px;
+  background-image: url("..//img/tw-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 17px 15px;
+  background-position: center center;
+  
+}
+
+.fb__link {
+  width:46px;
+  height:48px;
+  background-image: url("..//img/fb-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 12px 22px;
+  background-position: center center;
+  
+  
+}
+
+.ytb__link {
+  width:46px;
+  height:48px;
+  background-image: url("..//img/youtube-icon.svg ");
+  background-repeat: no-repeat;
+  background-size: 20px 16px;
+  background-position: center center;
+  
+}
+
+.developer {
+  display: flex;
+  align-items: center;
+}
+
+.developer__text {
+  display: block;
+  margin-right: 8px;
+}
