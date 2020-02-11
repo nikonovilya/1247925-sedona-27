@@ -1,3 +1,11 @@
+@font-face {  
+  font-family: "PT Sans', sans-serif";  
+  src: url("..//fonts/ptsans.woff2") format("woff2"), 
+       url("..//fonts/ptsans.woff") format("woff"); 
+  font-display: swap;      
+
+}
+
 html {
   box-sizing: border-box;
   margin: 0;
@@ -6,17 +14,22 @@ html {
 
 body {
   font-family: Pt Sans, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 14px;  
   line-height: 21px;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
-  color: #333;
+  color: #000;
   background-color: #f2f2f2;
+}
+
+h3 {
+  font-size: 21px;
+  font-weight: 700;
 }
 
 .container {
   position: relative;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   background-color: #fff;
   box-shadow: 0px 5px 15px 0px rgba(0, 1, 1, 0.2);
@@ -36,12 +49,18 @@ body {
   list-style: none;
 }
 
-.main-nav__item { 
+.main-nav__item {
   display: flex;
   width: 240px;
   height: 56px;
   line-height: 26px;
   align-items: center;
+}
+
+.main-nav__item-link {
+  margin: 0 auto;
+  font-weight: 700;
+  line-height: 26px;
 }
 
 .main-nav__item:first-child {
@@ -65,6 +84,15 @@ body {
   color: #000;
 }
 
+.main-nav__item-link:hover, 
+.main-nav__item-link:focus {
+  color: #81b3d2;
+  outline: 0;
+}
+
+main-nav__item-link:active {
+  color: rgba(0 0 0, 0.3);
+}
 
 .main-nav__logo {
   position: absolute;
@@ -75,34 +103,35 @@ body {
 
 /* ОФФЕР */
 
-.offer__wrapper { 
+.offer__wrapper {
   padding-top: 76px;
   padding-bottom: 80px;
   width: 1200px;
-  height: 442px;    
-  background-color: #fff;
+  height: 442px;
+  background-color: #e4f1f9;
   background-image: url("..//img/background-photo.jpg");
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
 }
 
-.offer__wrapper::before  { 
+.offer__wrapper::before {
   content: "";
   position: absolute;
   display: block;
   margin-top: 465px;
   width: 1200px;
-  height: 59px;    
+  height: 59px;
   background-image: url("..//img/background-bottom-part.svg");
-  background-repeat: no-repeat; 
-  background-size: cover; 
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .offer__img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
+
+/* СЕДОНА */
 
 .about {
   position: relative;
@@ -110,53 +139,195 @@ body {
   background-color: #fff;
   padding: 61px 0 56px;
 }
-  
 
 .about__info {
-  max-width: 490px;
-  margin-left: auto;
-  margin-right: auto;
-  
+  max-width: 490px; 
+  margin: 0 auto;
 }
 .about__info-title {
   margin: 0 0 38px 0;
-  font-size: 21px;
   line-height: 26px;
-  
 }
 .about__info-text {
   margin: 0;
-  line-height: 26px;    
+  line-height: 26px;
+  color: #333;
+}
+
+/* ПРЕИМУЩЕСТВА СЕДОНЫ */
+
+.advantages {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #81b3d2;
+  text-align: center;
+}
+
+.advantages__title {
+  margin: 0;
+  font-weight: 700;
+  color: #fff;
+}
+
+.advantages__number {
+  color: #fff;
+}
+
+.advantages__text {
+  color: #fff;
+  margin: 0;
+}
+
+.advantages__info-first {
+  max-width: 280px;
+  max-height: 146px;
+  padding: 46px 60px 64px 60px;
+}
+
+.advantages__info-second {
+  max-width: 303px;
+  max-height: 142px;
+  padding: 49px 49px 65px 48px;
+  order: 1;
+}
+
+.advantages__img {
+  max-width: 800px;
+  max-height: 256px;
+}
+
+/* ОСОБЕННОСТИ СЕДОНЫ */
+
+.features {
+  padding-top: 62px;
+  padding-bottom: 85px;
+}
+
+.features__list {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+.features__item {
+  max-width: 290px;
+  list-style: none;
+}
+
+.features__item-title {
+  margin: 0;
+  
+}
+
+.features__item-text {
+  margin: 0;
+}
+
+.features__item-house {
+  background-image: url("..//img/house-icon-1.svg");
+  background-repeat: no-repeat;
+  background-size: 75px 72px;
+  background-position: center;
+  bottom: 20px;
+}
+.features__item-food {
+  background-image: url("..//img/food-icon-2.svg");
+  background-repeat: no-repeat;
+  background-size: 74px 70px;
+  background-position: center;
+}
+.features__item-souvenirs {
+  background-image: url("..//img/souvenirs-icon-3.svg");
+  background-repeat: no-repeat;
+  background-size: 64px 76px;
+  background-position: center;
+}
+
+/* ПРЕИМУЩЕСТВА СЕДОНЫ */
+
+.reasons {
+  background-color: #eee;
+  padding-top: 50px;
+  padding-bottom: 64px;
+}
+
+.reasons__list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.reasons__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.reasons__item-title {
+  margin: 0;
+}
+
+.reasons__item-text {
+  margin: 0;
+}
+
+.reasons__item-area {
+  max-width: 208px;
+  height: 142px;
+}
+
+.reasons__item-road {
+  max-width: 262px;
+  height: 142px;
+}
+
+.reasons__item-tourists {
+  max-width: 247px;
+  height: 142px;
 }
 
 /* ПОИСК ГОСТИНИЦЫ */
 
-.travel { 
-  background-color: #fff;
-}
-
 .travel__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
   max-width: 440px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 57px;
-  margin-bottom: 52px;
-  
+  min-height: 100px;
+  padding-top: 56px;
+  padding-bottom: 51px;
+  margin: 0 auto;
 }
 .travel__title {
   font-size: 30px;
   font-weight: 700;
+  line-height: 36px;
+  margin: 0;
 }
 .travel__text {
   line-height: 24px;
+  color: #333 ;
+  margin: 0;
 }
 
-.travel__search__btn-wrapper {
-  margin-left: auto;
-  margin-right: auto;
+.travel__search__wrapper {
   text-align: center;
-        
 }
 
 .travel__search__btn {
@@ -171,8 +342,58 @@ body {
   text-align: center;
 }
 
+.travel__search__btn:hover,
+.travel__search__btn:focus {
+  background-color: #604e43;
+  cursor: pointer;
+}
 
-/* ПОДВАЛ */ 
+.travel__search__btn:active {
+  color: rgba(255 255 255, 0.3);
+  background-color: #503e33;
+}
+
+/* МОДАЛЬНОЕ ОКНО */
+
+.travel__search__modal-window {
+  max-width: 568px;
+  min-height: 395px;
+  left: 50%;
+  margin: 0 auto;
+}
+
+.travel__search__form-btn {
+  display: block;
+  min-width: 458px;
+  height: 58px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  text-align: center;
+  margin: 0 auto; 
+}
+
+.travel__search input[type="text"] {
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.travel__search input[type="text"]:hover {
+  cursor: pointer;
+  background-color: #ebebeb;
+}
+
+.travel__search input[type="text"]:focus {
+  background-color: #fff;
+  border: 2px solid #e5e5e5;
+  outline: 0;
+  
+}
+
+/* ПОДВАЛ */
 
 main-footer {
   background-color: #fff;
@@ -197,26 +418,20 @@ main-footer {
 
 main-footer__contacts-left-column {
   display: flex;
-  font-size: 21px;
-  line-height: 26px;
   flex-direction: column;
 }
 
-.main-footer__contacts-left-column a {
-  text-decoration: none;
+.main-footer__contacts__left-column a {
   color: #111;
   font-size: 21px;
-  font-weight: 700; 
+  font-weight: 700;
+  line-height: 26px;
+  text-decoration: none;
 }
 
-main-footer__contacts-instagram { 
-
-}
-
-.main-footer__contacts-phone {
+.main-footer__contacts__phone {
   margin-top: 10px;
 }
-
 
 .social {
   display: flex;
@@ -227,45 +442,40 @@ main-footer__contacts-instagram {
 .social__link {
   width: 46px;
   height: 48px;
-  background-color: #81b3d2;
   text-align: center;
+  background-color: #81b3d2;
 }
 
 .social__link:nth-child(2) {
   margin-right: 6px;
   margin-left: 6px;
-
 }
 
 .tw__link {
-  width:46px;
-  height:48px;
+  width: 46px;
+  height: 48px;
   background-image: url("..//img/tw-icon.svg");
   background-repeat: no-repeat;
   background-size: 17px 15px;
-  background-position: center center;
-  
+  background-position: center;
 }
 
 .fb__link {
-  width:46px;
-  height:48px;
+  width: 46px;
+  height: 48px;
   background-image: url("..//img/fb-icon.svg");
   background-repeat: no-repeat;
   background-size: 12px 22px;
-  background-position: center center;
-  
-  
+  background-position: center;
 }
 
 .ytb__link {
-  width:46px;
-  height:48px;
+  width: 46px;
+  height: 48px;
   background-image: url("..//img/youtube-icon.svg ");
   background-repeat: no-repeat;
   background-size: 20px 16px;
-  background-position: center center;
-  
+  background-position: center;
 }
 
 .developer {
