@@ -1,9 +1,21 @@
-@font-face {  
-  font-family: "PT Sans', sans-serif";  
-  src: url("..//fonts/ptsans.woff2") format("woff2"), 
-       url("..//fonts/ptsans.woff") format("woff"); 
-  font-display: swap;      
+@font-face {
+  font-family: "PT Sans";
+  font-display: swap;
+  src:   
+        url("../fonts/ptsans.woff2") format("woff2"), 
+        url("../fonts/ptsans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: "PT Sans";
+  font-display: swap;
+  src: 
+        url("../fonts/ptsansbold.woff2") format("woff2"), 
+        url("../fonts/ptsansbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
 }
 
 html {
@@ -14,7 +26,7 @@ html {
 
 body {
   font-family: Pt Sans, Arial, sans-serif;
-  font-size: 14px;  
+  font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
@@ -61,6 +73,7 @@ h3 {
   margin: 0 auto;
   font-weight: 700;
   line-height: 26px;
+  outline-color: #81b3d2;
 }
 
 .main-nav__item:first-child {
@@ -84,14 +97,14 @@ h3 {
   color: #000;
 }
 
-.main-nav__item-link:hover, 
+.main-nav__item-link:hover,
 .main-nav__item-link:focus {
   color: #81b3d2;
-  outline: 0;
+  outline-color: #81b3d2;
 }
 
-main-nav__item-link:active {
-  color: rgba(0 0 0, 0.3);
+.main-nav__item-link:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .main-nav__logo {
@@ -101,9 +114,13 @@ main-nav__item-link:active {
   transform: translate(-70px);
 }
 
+.main-nav__logo-link {
+  outline-color: #81b3d2;
+}
+
 /* ОФФЕР */
 
-.offer__wrapper {
+.offer-wrapper {
   padding-top: 76px;
   padding-bottom: 80px;
   width: 1200px;
@@ -114,7 +131,7 @@ main-nav__item-link:active {
   background-size: cover;
 }
 
-.offer__wrapper::before {
+.offer-wrapper::before {
   content: "";
   position: absolute;
   display: block;
@@ -141,7 +158,7 @@ main-nav__item-link:active {
 }
 
 .about__info {
-  max-width: 490px; 
+  max-width: 490px;
   margin: 0 auto;
 }
 .about__info-title {
@@ -185,13 +202,13 @@ main-nav__item-link:active {
   margin: 0;
 }
 
-.advantages__info-first {
+.advantages--first__info {
   max-width: 280px;
   max-height: 146px;
   padding: 46px 60px 64px 60px;
 }
 
-.advantages__info-second {
+.advantages--second__info {
   max-width: 303px;
   max-height: 142px;
   padding: 49px 49px 65px 48px;
@@ -201,12 +218,13 @@ main-nav__item-link:active {
 .advantages__img {
   max-width: 800px;
   max-height: 256px;
+  overflow: hidden;
 }
 
 /* ОСОБЕННОСТИ СЕДОНЫ */
 
 .features {
-  padding-top: 62px;
+  padding-top: 14px;
   padding-bottom: 85px;
 }
 
@@ -218,6 +236,7 @@ main-nav__item-link:active {
   padding: 0;
   margin: 0;
 }
+
 .features__item {
   max-width: 290px;
   list-style: none;
@@ -225,31 +244,38 @@ main-nav__item-link:active {
 
 .features__item-title {
   margin: 0;
-  
+  margin-bottom: 30px;
 }
 
 .features__item-text {
   margin: 0;
 }
 
-.features__item-house {
+.features__item--house {
   background-image: url("..//img/house-icon-1.svg");
   background-repeat: no-repeat;
   background-size: 75px 72px;
-  background-position: center;
+  background-position: 108px 50px;
+  padding-top: 153px;
   bottom: 20px;
 }
-.features__item-food {
+
+.features__item--food {
   background-image: url("..//img/food-icon-2.svg");
   background-repeat: no-repeat;
   background-size: 74px 70px;
-  background-position: center;
-}
-.features__item-souvenirs {
+  background-position: 108px 50px;
+  padding-top: 153px;
+  bottom: 20px;
+} 
+
+.features__item--souvenirs {
   background-image: url("..//img/souvenirs-icon-3.svg");
   background-repeat: no-repeat;
   background-size: 64px 76px;
-  background-position: center;
+  background-position: 108px 50px;
+  padding-top: 153px;
+  bottom: 20px;
 }
 
 /* ПРЕИМУЩЕСТВА СЕДОНЫ */
@@ -286,17 +312,17 @@ main-nav__item-link:active {
   margin: 0;
 }
 
-.reasons__item-area {
+.reasons__item--area {
   max-width: 208px;
   height: 142px;
 }
 
-.reasons__item-road {
+.reasons__item--road {
   max-width: 262px;
   height: 142px;
 }
 
-.reasons__item-tourists {
+.reasons__item--tourists {
   max-width: 247px;
   height: 142px;
 }
@@ -322,7 +348,7 @@ main-nav__item-link:active {
 }
 .travel__text {
   line-height: 24px;
-  color: #333 ;
+  color: #333;
   margin: 0;
 }
 
@@ -340,6 +366,7 @@ main-nav__item-link:active {
   font-weight: 700;
   line-height: 26px;
   text-align: center;
+  outline-color: #81b3d2;
 }
 
 .travel__search__btn:hover,
@@ -349,8 +376,9 @@ main-nav__item-link:active {
 }
 
 .travel__search__btn:active {
-  color: rgba(255 255 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
+  outline-color: #503e33;
 }
 
 /* МОДАЛЬНОЕ ОКНО */
@@ -360,20 +388,6 @@ main-nav__item-link:active {
   min-height: 395px;
   left: 50%;
   margin: 0 auto;
-}
-
-.travel__search__form-btn {
-  display: block;
-  min-width: 458px;
-  height: 58px;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
-  color: #fff;
-  text-transform: uppercase;
-  background-color: #81b3d2;
-  text-align: center;
-  margin: 0 auto; 
 }
 
 .travel__search input[type="text"] {
@@ -390,7 +404,32 @@ main-nav__item-link:active {
   background-color: #fff;
   border: 2px solid #e5e5e5;
   outline: 0;
-  
+}
+
+.travel__search__form-btn {
+  display: block;
+  min-width: 458px;
+  height: 58px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  text-align: center;
+  margin: 0 auto;
+  outline-color: #5496bd;
+}
+
+.travel__search__form-btn:hover,
+.travel__search__form-btn:focus {
+  background-color: #669ec0;
+  cursor: pointer;
+}
+
+.travel__search__form-btn:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
 }
 
 /* ПОДВАЛ */
@@ -419,17 +458,19 @@ main-footer {
 main-footer__contacts-left-column {
   display: flex;
   flex-direction: column;
+  outline-color: #81b3d2;
 }
 
-.main-footer__contacts__left-column a {
+.contacts a {
   color: #111;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   text-decoration: none;
+  outline-color: #81b3d2;
 }
 
-.main-footer__contacts__phone {
+.contacts__phone {
   margin-top: 10px;
 }
 
@@ -444,11 +485,21 @@ main-footer__contacts-left-column {
   height: 48px;
   text-align: center;
   background-color: #81b3d2;
+  outline-color: #81b3d2;
 }
 
 .social__link:nth-child(2) {
   margin-right: 6px;
   margin-left: 6px;
+}
+
+.social__link:hover,
+.social__link:focus {
+  background-color: #669ec0;
+}
+
+.social__link:active {
+  background-color: #5496bd;
 }
 
 .tw__link {
@@ -486,4 +537,243 @@ main-footer__contacts-left-column {
 .developer__text {
   display: block;
   margin-right: 8px;
+}
+
+.developer__link {
+  outline-color: #81b3d2;;
+}
+
+.developer__link-img:hover,
+.developer__link-img:focus {
+  fill: #81b3d2;
+}
+
+.developer__link-img:active {
+  fill: #bdbbbc;
+}
+
+/* CATALOG.HTML */
+
+/* ФИЛЬТРЫ */ 
+
+.filters__form-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #D1E3ED;
+  background-image: url("..//img/filter-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.filters__list {
+  list-style: none;
+}
+
+.filters__item input {
+  
+}
+
+.filters__checkbox-label {
+  color: #fff;
+}
+
+.filters__wrapper:after {
+  content: "";
+}
+
+.filters__legend {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.filters__price-legend {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.filters__price-label {
+  color: #fff;
+}
+
+.filters__price-label input {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+}
+
+.filters__price-control {
+  font-size: 0; 
+}
+
+.filter-btn {
+  display: block;
+  width: 133px;
+  height: 32px; 
+  color: #fff ;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto; 
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+/* НАЙДЕННЫЕ ГОСТИНИЦЫ */
+
+.hotels__sorting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hotels__sorting-result-title {
+    display: inline;
+}
+
+.hotels__sorting-result-total {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.hotels__sorting-title {
+  font-size: 12px;
+  line-height: 18px; 
+} 
+
+.hotel__sotring-items {
+  display: flex;
+  margin-right: auto;
+}
+
+.hotels__sorting-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hotels__sorting-link {
+  font-size: 12px;
+  line-height: 18px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.hotels__sorting-link:hover,
+.hotels__sorting-link:focus {
+    color: #81b3d2;
+}
+
+.hotels__sorting-link:active {
+  color: #000;
+}
+
+.hotels__sorting-updown-list {
+  display: flex;
+  list-style: none;
+}
+
+.hotels__sorting-updown-link {
+  font-size: 0; 
+}
+
+.link-up {
+  
+}
+
+.link-down {
+  
+}
+
+/* ОТЕЛИ */
+
+
+.hotels__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hotels__item__photo {
+  width: 135px;
+  height: 90px;
+  padding-right: 30px;
+}
+
+.hotels__item-description {
+  margin-right: auto;
+  max-height: 90px;
+}
+
+.hotels__item-description a {
+  text-decoration: none;
+}
+
+.hotels__item-name {
+  line-height: 26px;
+}
+
+.hotels__item-link {
+  color: #000;
+  line-height: 26px;
+}
+
+.hotels__item-link:hover,
+.hotels__item-link:focus {
+  color: #81b3d2;
+}
+
+.hotels__item-link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
+hotels__item__info-type {
+  color: #333;
+}
+
+.hotels__item__info-btn {
+  display: inline-block;
+  width: 110px;
+  height: 27px;
+  color: #fff;
+  background-color: #81b3d2;
+  text-align: center;
+}
+
+.hotels__item__info-btn:hover,
+.hotels__item__info-btn:focus {
+  background-color: #669ec0;
+}
+
+.hotels__item__info-btn:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.hotels__item__details-price {
+  color: #333;
+}
+
+.hotels__item__details-btn {
+  display: inline-block;
+  width: 142px;
+  height: 27px;
+  color: #fff;
+  background-color: #766357;
+  text-align: center; 
+}
+
+.hotels__item__details-btn:hover,
+.hotels__item__details-btn:focus {
+  background-color: #604e43;
+}
+
+.hotels__item__details-btn:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
 }
