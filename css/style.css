@@ -97,13 +97,19 @@ h3 {
   color: #000;
 }
 
-.main-nav__item-link:hover,
-.main-nav__item-link:focus {
+.main-nav__item-link--active {
+  color: #766357;
+  cursor: auto;
+}
+
+
+.main-nav__item-link:hover:not(.main-nav__item-link--active),
+.main-nav__item-link:focus:not(.main-nav__item-link--active) {
   color: #81b3d2;
   outline-color: #81b3d2;
 }
 
-.main-nav__item-link:active {
+.main-nav__item-link:active:not(.main-nav__item-link--active) {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -661,30 +667,41 @@ main-footer__contacts-left-column {
 
 /* ФИЛЬТРЫ */ 
 
+ {
+  margin-left: 72px;
+}
+
 .filters__form-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-height: 217px;
   background-color: #D1E3ED;
   background-image: url("..//img/filter-background.jpg");
   background-repeat: no-repeat;
   background-size: cover; 
+  background-position: 0 -330px;
+  padding-left: 72px;
+}
+
+.filters__fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .filters__list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.filters__item input {
-  
+.filters__item {
+  padding: 0;
 }
 
 .filters__checkbox-label {
   color: #fff;
-}
-
-.filters__wrapper:after {
-  content: "";
 }
 
 .filters__legend {
@@ -738,6 +755,7 @@ main-footer__contacts-left-column {
   border: 2px solid #fff;
   border-radius: 2px;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .filter-btn:hover {
