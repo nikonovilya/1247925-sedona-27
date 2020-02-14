@@ -446,8 +446,28 @@ h3 {
   min-height: 38px;
 }
 
-.form__arrival-calendar {
+
+.calendar {
+  cursor: pointer;
+  outline-color: #81b3d2;
   border: none;
+}
+
+.form__arrival-calendar-icon,
+.form__departure-calendar-icon {
+  fill: #cacaca;
+}
+
+.form__arrival-calendar-icon:hover,
+.form__departure-calendar-icon:hover,
+.form__arrival-calendar-icon:focus,
+.form__departure-calendar-icon:focus {
+  fill: #000;
+}
+
+.form__arrival-calendar-icon:active,
+.form__departure-calendar-icon:active {
+  fill: #81b3d2;
 }
 
 .form__departure-input {
@@ -461,6 +481,124 @@ h3 {
 
 .form__number-people {
   display: flex;
+}
+
+.form__number-adults {
+  display: flex;
+  align-items: center;
+}
+
+.adults__btn--number {
+width: 38px;  
+height: 38px;
+text-align: center;
+padding: 0;
+}
+
+.adults__btn--low {
+border: none;
+width: 38px;
+height: 38px;
+background-color: #f2f2f2;
+cursor: pointer;
+outline-color: #81b3d2;
+}
+
+.adults__btn--low::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 3px;
+  background-color: #a9a9a9;
+}
+
+.adults__btn--low::before {
+  transform: translateX(-6px) translateY(-1px);
+}
+
+.adults__btn--hight {
+border: none;
+width: 38px;
+height: 38px;
+background-color: #f2f2f2;
+cursor: pointer;
+outline-color: #81b3d2;
+}
+
+.adults__btn--hight::before,
+.adults__btn--hight::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 3px;
+  background-color: #a9a9a9;
+}
+
+.adults__btn--hight::before {
+  transform: translateX(-5px) translateY(-1px);
+}
+
+.adults__btn--hight::after {
+  transform: translateX(-5px) translateY(-1px) rotate(90deg);
+}
+
+.form__number-kids {
+    display: flex;
+    align-items: center;
+}
+
+.kids__btn--number {
+  width: 38px;  
+  height: 38px;
+  text-align: center;
+  padding: 0;
+}
+
+.kids__btn--low {
+  border: none;
+  width: 38px;
+  height: 38px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  outline-color: #81b3d2; 
+}
+
+.kids__btn--low::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 3px;
+  background-color: #a9a9a9;
+}
+
+.kids__btn--low::before {
+  transform: translateX(-6px) translateY(-1px);
+}
+
+.kids__btn--hight {
+  border: none;
+  width: 38px;
+  height: 38px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  outline-color: #81b3d2;
+}
+
+.kids__btn--hight::before,
+.kids__btn--hight::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 3px;
+  background-color: #a9a9a9;
+}
+
+.kids__btn--hight::before {
+  transform: translateX(-5px) translateY(-1px);
+}
+
+.kids__btn--hight::after {
+  transform: translateX(-5px) translateY(-1px) rotate(90deg);
 }
 
 .travel__search__form-btn {
@@ -489,59 +627,6 @@ h3 {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
-
-.form__number-adults {
-  display: flex;
-  align-items: center;
-}
-
-.adults__btn--number {
-width: 38px;  
-height: 38px;
-text-align: center;
-padding: 0;
-}
-
-.adults__btn--low {
-border: none;
-width: 38px;
-height: 38px;
-background-color: #f2f2f2;
-}
-
-.adults__btn--hight {
-border: none;
-width: 38px;
-height: 38px;
-background-color: #f2f2f2;
-}
-
-.form__number-kids {
-    display: flex;
-    align-items: center;
-}
-
-.kids__btn--number {
-  width: 38px;  
-  height: 38px;
-  text-align: center;
-  padding: 0;
-}
-
-.kids__btn--low {
-  border: none;
-  width: 38px;
-  height: 38px;
-  background-color: #f2f2f2;
-}
-
-.kids__btn--hight {
-  border: none;
-  width: 38px;
-  height: 38px;
-  background-color: #f2f2f2;
-}
-
 
 /* ПОДВАЛ */
 
@@ -702,6 +787,7 @@ main-footer__contacts-left-column {
 
 .filters__checkbox-label {
   color: #fff;
+  cursor: pointer;
 }
 
 .filters__legend {
