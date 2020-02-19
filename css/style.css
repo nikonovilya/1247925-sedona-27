@@ -827,6 +827,11 @@ main-footer__contacts-left-column {
   padding-right: 73px;
 }
 
+.filters__options:nth-child(2) {
+  margin-right: auto;
+  margin-left: 115px;
+}
+
 .filters__fieldset {
   border: none;
   padding: 0;
@@ -851,8 +856,6 @@ main-footer__contacts-left-column {
 .filters__checkbox-label {  
   position: relative;
   display: block;
-  width: 50px;
-  height: 23px;
   padding-left: 38px;
   color: #fff;
   cursor: pointer;
@@ -917,7 +920,10 @@ input[type=checkbox]+.filters__checkbox-check {
   position: relative;
   color: #fff;
   width: 157px;
-  text-align: center;
+}
+
+.filters__price-label {
+  padding-left: 60px;
 }
 
 .filters__price-label:last-child:before {
@@ -937,6 +943,7 @@ input[type=checkbox]+.filters__checkbox-check {
   margin: 0;
   border: none;
   color: #fff;
+  width: 65px;
 }
 
 .filters__price-range{
