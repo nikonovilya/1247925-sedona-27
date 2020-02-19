@@ -117,19 +117,19 @@
         <h2 class="visually-hidden">Преимущества Седоны</h2>
         <ul class="reasons__list">
           <li class="reasons__item reasons__item--area">
-            <h3 class="reasons__item-title">Небольшая площадь</h3>
+            <h3 class="reasons__item-title">Небольшая<br> площадь</h3>
             <span class="reasons__item-number">— №3 —</span>
-            <p class="reasons__item-text">Все достопримечательности находятся очень близко</p>
+            <p class="reasons__item-text">Все достопримечательности<br> находятся очень близко</p>
           </li>
           <li class="reasons__item reasons__item--road">
-            <h3 class="reasons__item-title">Красивая дорога</h3>
+            <h3 class="reasons__item-title">Красивая<br> дорога</h3>
             <span class="reasons__item-number">— №4 —</span>
-            <p class="reasons__item-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <p class="reasons__item-text">Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
           </li>
           <li class="reasons__item reasons__item--tourists">
-            <h3 class="reasons__item-title">Мало туристов</h3>
+            <h3 class="reasons__item-title">Мало<br> туристов</h3>
             <span class="reasons__item-number">— №5 —</span>
-            <p class="reasons__item-text">Большинство едет в Гранд Каньон и толпится там</p>
+            <p class="reasons__item-text">Большинство едет в Гранд Каньон<br> и толпится там</p>
           </li>
         </ul>
       </section>
@@ -157,31 +157,35 @@
             <form class="travel__search__modal-form form" action="#" method="POST">
               <div class="form__arrival">
                 <label class="form__arrival-label" for="date-arrival">Дата заезда:</label>
-                <input class="form__arrival-input" type="text" id="date-arrival" name="date-arrival"
-                  placeholder="24 апреля 2017">
-                <button class="form__arrival-calendar calendar" type="button" name="calendar">
-                  <svg class="form__arrival-calendar-icon calendar-icon" xmlns="http://www.w3.org/2000/svg" width="21"
-                    height="22" viewBox="0 0 21 22">
-                    <path
-                      d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
-                    <path
-                      d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
-                  </svg>
-                </button>
+                <div class="form-arrival-wrapper">
+                  <input class="form__arrival-input" type="text" id="date-arrival" name="date-arrival"
+                    placeholder="24 апреля 2017">
+                  <button class="form__arrival-calendar calendar" type="button" name="calendar">
+                    <svg class="form__arrival-calendar-icon calendar-icon" xmlns="http://www.w3.org/2000/svg" width="21"
+                      height="22" viewBox="0 0 21 22">
+                      <path
+                        d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
+                      <path
+                        d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
+                    </svg>
+                  </button>
+                </div>
               </div>
               <div class="form__departure">
                 <label class="form__departure-label" for="date-departure">Дата выезда:</label>
-                <input class="form__departure-input" type="text" id="date-departure" name="date-departure"
-                  placeholder="4 июля 2017">
-                <button class="form__departure-calendar calendar" type="button" name="calendar">
-                  <svg class="form__departure-calendar-icon calendar-icon" xmlns="http://www.w3.org/2000/svg" width="21"
-                    height="22" viewBox="0 0 21 22">
-                    <path
-                      d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
-                    <path
-                      d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
-                  </svg>
-                </button>
+                <div class="form-arrival-wrapper">
+                  <input class="form__departure-input" type="text" id="date-departure" name="date-departure"
+                    placeholder="4 июля 2017">
+                  <button class="form__departure-calendar calendar" type="button" name="calendar">
+                    <svg class="form__departure-calendar-icon calendar-icon" xmlns="http://www.w3.org/2000/svg"
+                      width="21" height="22" viewBox="0 0 21 22">
+                      <path
+                        d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
+                      <path
+                        d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
+                    </svg>
+                  </button>
+                </div>
               </div>
               <div class="form__number-people">
                 <div class="form__number-adults adults">
