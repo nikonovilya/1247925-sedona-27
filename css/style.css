@@ -405,16 +405,7 @@ h3 {
 
 .travel__search__modal-form input::placeholder {
   color: #000;
-}
-
-.form__arrival {
-  position: relative;
-  padding-top: 55px;
-}
-
-.form__departure {
-  padding-top: 29px;
-  padding-bottom: 30px;
+  padding-left: 13px;
 }
 
 .travel__search__modal-form input[type="text"]:hover {
@@ -428,15 +419,39 @@ h3 {
   outline: 0;
 }
 
-.form__arrival-input {
-  width: 364px;
-  min-height: 38px;
+.form__departure {
+  padding-top: 29px;
+  padding-bottom: 30px;
+}
+
+.form__departure-label {
+  margin-right: 15px;
+}
+
+.form-departure-wrapper {
+  position: relative;
+  display: inline;
+  width: 100%;
+}
+
+.form__arrival {
+  position: relative;
+  padding-top: 55px;
+}
+
+.form__arrival-label {
+  margin-right: 19px;
 }
 
 .form-arrival-wrapper {
   position: relative;
   display: inline;
   width: 100%;
+}
+
+.form__arrival-input {
+  width: 346px;
+  min-height: 38px;
 }
 
 .calendar {
@@ -472,7 +487,7 @@ h3 {
 }
 
 .form__departure-input {
-  width: 364px;
+  width: 346px;
   min-height: 38px;
 }
 
@@ -489,6 +504,15 @@ h3 {
 .kids__label {
   font-weight: 700;
   line-height: 26px;
+}
+
+.adults__label {
+  margin-right: 38px;
+}
+
+.kids__label {
+  margin-left: 50px;
+  margin-right: 32px;
 }
 
 .form__number-adults {
@@ -889,6 +913,10 @@ main-footer__contacts-left-column {
   overflow: hidden;
 }
 
+.filters__checkbox-input:focus + .filters__checkbox-check {
+  outline: auto;
+}
+
 input[type="checkbox"]:checked + .filters__checkbox-check {
   background-image: url("..//img/checkbox-on.svg");
   background-repeat: no-repeat;
@@ -983,6 +1011,19 @@ input[type="checkbox"] + .filters__checkbox-check {
   font-size: 0;
 }
 
+.filters__price-control:hover::before,
+.filters__price-control:focus::before,
+.filters__price-control:hover::after,
+.filters__price-control:focus::after {
+  transform: scale(1.1);
+}
+
+.filters__price-control--min:focus::before,
+.filters__price-control--max:focus::before {
+  outline: inherit;
+  outline-color: #81b3d2;
+}
+
 .filters__price-control--min::before {
   content: "";
   position: absolute;
@@ -997,7 +1038,7 @@ input[type="checkbox"] + .filters__checkbox-check {
   cursor: pointer;
 }
 
-.filters__price-control--max::after {
+.filters__price-control--max::before {
   content: "";
   position: absolute;
   width: 4px;
@@ -1009,12 +1050,6 @@ input[type="checkbox"] + .filters__checkbox-check {
   top: -9px;
   left: 80%;
   cursor: pointer;
-}
-.filters__price-control:hover::before,
-.filters__price-control:focus::before,
-.filters__price-control:hover::after,
-.filters__price-control:focus::after {
-  transform: scale(1.1);
 }
 
 .filter-btn {
@@ -1047,6 +1082,11 @@ input[type="checkbox"] + .filters__checkbox-check {
 }
 
 .filter-btn:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.filter-btn:active {
   color: #000;
   background-color: #fff;
 }
