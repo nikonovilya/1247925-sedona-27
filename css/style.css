@@ -375,11 +375,13 @@ h3 {
 /* МОДАЛЬНОЕ ОКНО */
 
 .travel__search__modal-window {
+  position: absolute;
   max-width: 568px;
-  min-height: 395px;
+  min-height: 395px;  
   left: 50%;
   margin: 0 auto;
-  background-color: pink;
+  background-color: #fff;
+  display: none;
 }
 
 .travel__search__modal-form {
@@ -713,6 +715,12 @@ h3 {
 .travel__search__form-btn:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
+}
+
+/* КАРТА */
+
+.map {
+  position: relative;
 }
 
 /* ПОДВАЛ */
