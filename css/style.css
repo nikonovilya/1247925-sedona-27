@@ -386,7 +386,6 @@ h3 {
   margin-left: 55px;
 }
 
-
 .travel__search__modal-form label[for="date-arrival"],
 .travel__search__modal-form label[for="date-departure"] {
   font-size: 14px;
@@ -737,7 +736,7 @@ main-footer__contacts-left-column {
 .social {
   display: flex;
   max-width: 150px;
-  margin-right: 68px;
+  margin-right: 61px;
 }
 
 .social__link {
