@@ -53,7 +53,6 @@ h3 {
 
 .main-nav__menu-list {
   display: flex;
-  justify-content: space-between;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -65,13 +64,6 @@ h3 {
   height: 56px;
   line-height: 26px;
   align-items: center;
-}
-
-.main-nav__item-link {
-  margin: 0 auto;
-  font-weight: 700;
-  line-height: 26px;
-  outline-color: #81b3d2;
 }
 
 .main-nav__item:first-child {
@@ -91,8 +83,14 @@ h3 {
 }
 
 .main-nav__item-link {
+  display: block;
+  margin: 0 auto;
+  font-weight: 700;
+  line-height: 26px;
+  outline-color: #81b3d2;
   text-decoration: none;
   color: #000;
+  margin-bottom: 2px;
 }
 
 .main-nav__item-link--active {
@@ -127,18 +125,19 @@ h3 {
   padding-top: 76px;
   padding-bottom: 80px;
   width: 1200px;
-  height: 442px;
+  height: 352px;
   background-color: #e4f1f9;
   background-image: url("..//img/background-photo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 0 -83px;
 }
 
 .offer-wrapper::before {
   content: "";
   position: absolute;
   display: block;
-  margin-top: 465px;
+  margin-top: 375px;
   width: 1200px;
   height: 59px;
   background-image: url("..//img/background-bottom-part.svg");
@@ -157,7 +156,7 @@ h3 {
   position: relative;
   text-align: center;
   background-color: #fff;
-  padding: 61px 0 56px;
+  padding: 60px 0 51px;
 }
 
 .about__info {
@@ -165,7 +164,7 @@ h3 {
   margin: 0 auto;
 }
 .about__info-title {
-  margin: 0 0 38px 0;
+  margin: 0 0 27px 0;
   line-height: 26px;
 }
 .about__info-text {
@@ -184,8 +183,9 @@ h3 {
 .advantages__info {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+  width: 400px;
+  height: 256px;
   background-color: #81b3d2;
   text-align: center;
 }
@@ -194,41 +194,37 @@ h3 {
   margin: 0;
   font-weight: 700;
   color: #fff;
+  margin-top: 47px;
 }
 
 .advantages__number {
   color: #fff;
+  margin-top: 24px;
 }
 
 .advantages__text {
   color: #fff;
-  margin: 0;
+  margin-top: 21px;
 }
 
-.advantages--first__info {
-  max-width: 280px;
-  max-height: 146px;
-  padding: 46px 60px 64px 60px;
-}
-
-.advantages--second__info {
-  max-width: 310px;
-  max-height: 142px;
-  padding: 49px 49px 65px 48px;
+.advantages__info--second {
   order: 1;
+}
+
+.advantages__title--second {
+  margin-top: 45px;
 }
 
 .advantages__img {
   max-width: 800px;
   max-height: 256px;
-  overflow: hidden;
 }
 
 /* ОСОБЕННОСТИ СЕДОНЫ */
 
 .features {
   padding-top: 14px;
-  padding-bottom: 85px;
+  padding-bottom: 82px;
 }
 
 .features__list {
@@ -246,8 +242,7 @@ h3 {
 }
 
 .features__item-title {
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 2px 0 24px 0;
 }
 
 .features__item-text {
@@ -258,8 +253,8 @@ h3 {
   background-image: url("..//img/house-icon-1.svg");
   background-repeat: no-repeat;
   background-size: 75px 72px;
-  background-position: 108px 50px;
-  padding-top: 153px;
+  background-position: 106px 46px;
+  padding-top: 145px;
   bottom: 20px;
 }
 
@@ -267,8 +262,8 @@ h3 {
   background-image: url("..//img/food-icon-2.svg");
   background-repeat: no-repeat;
   background-size: 74px 70px;
-  background-position: 108px 50px;
-  padding-top: 153px;
+  background-position: 107px 46px;
+  padding-top: 145px;
   bottom: 20px;
 }
 
@@ -276,8 +271,8 @@ h3 {
   background-image: url("..//img/souvenirs-icon-3.svg");
   background-repeat: no-repeat;
   background-size: 64px 76px;
-  background-position: 108px 50px;
-  padding-top: 153px;
+  background-position: 112px 42px;
+  padding-top: 145px;
   bottom: 20px;
 }
 
@@ -285,7 +280,7 @@ h3 {
 
 .reasons {
   background-color: #eee;
-  padding-top: 50px;
+  padding-top: 47px;
   padding-bottom: 64px;
 }
 
@@ -302,7 +297,6 @@ h3 {
 .reasons__item {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   text-align: center;
   width: 33.3333%;
@@ -313,40 +307,51 @@ h3 {
   margin: 0;
 }
 
+.reasons__item-number {
+  padding-top: 24px;
+}
+
 .reasons__item-text {
+  padding-top: 21px;
   margin: 0;
 }
 
 /* ПОИСК ГОСТИНИЦЫ */
 
-.travel__info {
+/* КАРТА */
+
+.search {
+  position: relative;
+}
+
+.search__offer {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   text-align: center;
   max-width: 440px;
   min-height: 100px;
-  padding-top: 56px;
-  padding-bottom: 51px;
+  padding-top: 54px;
+  padding-bottom: 47px;
   margin: 0 auto;
 }
-.travel__title {
+
+.search__offer-title {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
-  margin: 0;
+  margin: 0 0 23px 0;
 }
-.travel__text {
+.search__offer-text {
   line-height: 24px;
   color: #333;
   margin: 0;
 }
 
-.travel__search-wrapper {
+.search__btn-wrapper {
   text-align: center;
 }
 
-.travel__search__btn {
+.search__btn {
   background-color: #766357;
   color: #fff;
   width: 568px;
@@ -360,13 +365,13 @@ h3 {
   border: none;
 }
 
-.travel__search__btn:hover,
-.travel__search__btn:focus {
+.search__btn:hover,
+.search__btn:focus {
   background-color: #604e43;
   cursor: pointer;
 }
 
-.travel__search__btn:active {
+.search__btn:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
   outline-color: #503e33;
@@ -374,28 +379,28 @@ h3 {
 
 /* МОДАЛЬНОЕ ОКНО */
 
-.travel__search__modal-window {
+.search__modal-window {
   position: absolute;
-  max-width: 568px;
-  min-height: 395px;  
-  left: 50%;
+  width: 568px;
+  min-height: 395px;
+  left: 316px;
+  top: 293px;
   margin: 0 auto;
   background-color: #fff;
-  display: none;
 }
 
-.travel__search__modal-form {
+.search__modal-form {
   margin-left: 55px;
 }
 
-.travel__search__modal-form label[for="date-arrival"],
-.travel__search__modal-form label[for="date-departure"] {
+.search__modal-form label[for="date-arrival"],
+.search__modal-form label[for="date-departure"] {
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
 }
 
-.travel__search__modal-form input[type="text"] {
+.search__modal-form input[type="text"] {
   background-color: #f2f2f2;
   border: none;
   color: #000;
@@ -405,36 +410,23 @@ h3 {
   text-transform: uppercase;
 }
 
-.travel__search__modal-form input::placeholder {
+.search__modal-form input::placeholder {
   color: #000;
-  padding-left: 13px;
+  padding-left: 12px;
 }
 
-.travel__search__modal-form input[type="text"]:hover {
+.search__modal-form input[type="text"]:hover {
   cursor: pointer;
   background-color: #ebebeb;
 }
 
-.travel__search__modal-form input[type="text"]:focus {
+.search__modal-form input[type="text"]:focus {
   background-color: #fff;
   border: 2px solid #e5e5e5;
   outline: 0;
 }
 
-.form__departure {
-  padding-top: 29px;
-  padding-bottom: 30px;
-}
-
-.form__departure-label {
-  margin-right: 15px;
-}
-
-.form-departure-wrapper {
-  position: relative;
-  display: inline;
-  width: 100%;
-}
+/* ПЕРВАЯ СТРОКА */
 
 .form__arrival {
   position: relative;
@@ -442,7 +434,7 @@ h3 {
 }
 
 .form__arrival-label {
-  margin-right: 19px;
+  margin-right: 21px;
 }
 
 .form-arrival-wrapper {
@@ -452,15 +444,49 @@ h3 {
 }
 
 .form__arrival-input {
-  width: 346px;
+  width: 344px;
   min-height: 38px;
 }
+
+.form__arrival-input:focus {
+  width: 340px;
+  min-height: 34px;
+}
+
+/* ВТОРАЯ СТРОКА */
+
+.form__departure {
+  padding-top: 27px;
+  padding-bottom: 29px;
+}
+
+.form__departure-label {
+  margin-right: 17px;
+}
+
+.form__departure-wrapper {
+  position: relative;
+  display: inline;
+  width: 100%;
+}
+
+.form__departure-input {
+  width: 344px;
+  min-height: 38px;
+}
+
+.form__departure-input:focus {
+  width: 340px;
+  min-height: 34px;
+}
+
+/* КАЛЕНДАРЬ */
 
 .calendar {
   position: absolute;
   display: block;
-  top: -10px;
-  right: 0;
+  top: -9px;
+  right: 1px;
   width: 38px;
   height: 38px;
   background-color: transparent;
@@ -488,18 +514,21 @@ h3 {
   fill: #81b3d2;
 }
 
-.form__departure-input {
-  width: 346px;
-  min-height: 38px;
-}
-
+.form__arrival-calendar,
 .form__departure-calendar {
   border: none;
 }
 
+/* ТРЕТЬЯ СТРОКА */
+
 .form__number-people {
   display: flex;
   padding-bottom: 54px;
+}
+
+.adults {
+  display: flex;
+  align-items: center;
 }
 
 .adults__label,
@@ -509,17 +538,12 @@ h3 {
 }
 
 .adults__label {
-  margin-right: 38px;
+  margin-right: 40px;
 }
 
 .kids__label {
-  margin-left: 50px;
-  margin-right: 32px;
-}
-
-.form__number-adults {
-  display: flex;
-  align-items: center;
+  margin-left: 53px;
+  margin-right: 27px;
 }
 
 .adults__btn-wrapper,
@@ -550,22 +574,21 @@ h3 {
   width: 12px;
   height: 3px;
   background-color: #a9a9a9;
-}
-
-.adults__btn--low::before {
   transform: translateX(-6px) translateY(-1px);
 }
 
-.adults__btn--low:hover::after,
-.adults__btn--low:focus::after,
 .adults__btn--low:hover::before,
 .adults__btn--low:focus::before {
   background-color: #000;
 }
 
-.adults__btn--low:active::after,
 .adults__btn--low:active::before {
   background-color: #81b3d2;
+}
+
+.adults__btn-wrapper input[type="text"]:focus {
+  width: 34px;
+  height: 34px;
 }
 
 .adults__btn--hight {
@@ -594,28 +617,21 @@ h3 {
   transform: translateX(-5.5px) translateY(-1px) rotate(90deg);
 }
 
-.adults__btn--hight:hover::after,
-.adults__btn--hight:focus::after,
 .adults__btn--hight:hover::before,
-.adults__btn--hight:focus::before {
+.adults__btn--hight:focus::before,
+.adults__btn--hight:hover::after,
+.adults__btn--hight:focus::after {
   background-color: #000;
 }
 
-.adults__btn--hight:active::after,
-.adults__btn--hight:active::before {
+.adults__btn--hight:active::before,
+.adults__btn--hight:active::after {
   background-color: #81b3d2;
 }
 
-.form__number-kids {
+.kids {
   display: flex;
   align-items: center;
-}
-
-.kids__btn--number {
-  width: 38px;
-  height: 38px;
-  text-align: center;
-  padding: 0;
 }
 
 .kids__btn--low {
@@ -640,16 +656,25 @@ h3 {
   transform: translateX(-6px) translateY(-1px);
 }
 
-.kids__btn--low:hover::after,
-.kids__btn--low:focus::after,
 .kids__btn--low:hover::before,
 .kids__btn--low:focus::before {
   background-color: #000;
 }
 
-.kids__btn--low:active::after,
 .kids__btn--low:active::before {
   background-color: #81b3d2;
+}
+
+.kids__btn--number {
+  width: 38px;
+  height: 38px;
+  text-align: center;
+  padding: 0;
+}
+
+.kids__btn-wrapper input[type="text"]:focus {
+  width: 34px;
+  height: 34px;
 }
 
 .kids__btn--hight {
@@ -690,7 +715,7 @@ h3 {
   background-color: #81b3d2;
 }
 
-.travel__search__form-btn {
+.search__modal-form__btn {
   display: block;
   min-width: 458px;
   height: 58px;
@@ -698,35 +723,37 @@ h3 {
   font-weight: 700;
   line-height: 26px;
   color: #fff;
+  padding: 0;
   text-transform: uppercase;
   background-color: #81b3d2;
   text-align: center;
-  padding: 0;
   outline-color: #5496bd;
   border: none;
 }
 
-.travel__search__form-btn:hover,
-.travel__search__form-btn:focus {
+.search__modal-form__btn:hover,
+.search__modal-form__btn:focus {
   background-color: #669ec0;
   cursor: pointer;
 }
 
-.travel__search__form-btn:active {
+.search__modal-form__btn:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
 
-/* КАРТА */
-
-.map {
-  position: relative;
-}
-
 /* ПОДВАЛ */
 
-main-footer {
+.main-footer {
   background-color: #fff;
+}
+
+.main-footer--first {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .main-footer__contacts {
@@ -734,22 +761,16 @@ main-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 33px;
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
 .main-footer__contacts:first-child {
-  margin-left: 132px;
+  margin-left: 123px;
 }
 
 .main-footer__contacts:last-child {
   margin-right: 101px;
-}
-
-main-footer__contacts-left-column {
-  display: flex;
-  flex-direction: column;
-  outline-color: #81b3d2;
 }
 
 .contacts a {
@@ -762,13 +783,13 @@ main-footer__contacts-left-column {
 }
 
 .contacts__phone {
-  margin-top: 10px;
+  margin-top: 7px;
 }
 
 .social {
   display: flex;
   max-width: 150px;
-  margin-right: 61px;
+  margin-right: 50px;
 }
 
 .social__link {
@@ -813,7 +834,7 @@ main-footer__contacts-left-column {
   background-image: url("..//img/fb-icon.svg");
   background-repeat: no-repeat;
   top: 12px;
-  left: 18px;
+  left: 17px;
 }
 
 .social__link--ytb::before {
@@ -824,7 +845,7 @@ main-footer__contacts-left-column {
   background-image: url("..//img/youtube-icon.svg ");
   background-repeat: no-repeat;
   top: 15.5px;
-  left: 14px;
+  left: 13px;
 }
 
 .social__link--tw:active::before,
@@ -845,6 +866,7 @@ main-footer__contacts-left-column {
 
 .developer__link {
   outline-color: #81b3d2;
+  margin-top: 3px;
 }
 
 .developer__link-img:hover,
