@@ -54,21 +54,21 @@
                   <label class="filters__checkbox-label" for="pool">
                     <input class="filters__checkbox-input" type="checkbox" id="pool" name="pool" checked>
                     <span class="filters__checkbox-check"></span>
-                    Бассейн
+                    <span class="filters__checkbox-input-name">Бассейн</span>
                   </label>
                 </li>
                 <li class="filters__item">
                   <label class="filters__checkbox-label" for="parking">
                     <input class="filters__checkbox-input" type="checkbox" id="parking" name="parking">
-                    Парковка
                     <span class="filters__checkbox-check"></span>
+                    <span class="filters__checkbox-input-name">Парковка</span>
                   </label>
                 </li>
                 <li class="filters__item">
                   <label class="filters__checkbox-label" for="wi-fi">
                     <input class="filters__checkbox-input" type="checkbox" id="wi-fi" name="wi-fi">
                     <span class="filters__checkbox-check"></span>
-                    WI-FI
+                    <span class="filters__checkbox-input-name">WI-FI</span>
                   </label>
                 </li>
               </ul>
@@ -82,21 +82,21 @@
                   <label class="filters__checkbox-label" for="hotel">
                     <input class="filters__checkbox-input" type="checkbox" id="hotel" name="hotel" checked>
                     <span class="filters__checkbox-check"></span>
-                    Гостиница
+                    <span class="filters__checkbox-input-name">Гостиница</span>
                   </label>
                 </li>
                 <li class="filters__item">
                   <label class="filters__checkbox-label" for="motel">
                     <input class="filters__checkbox-input" type="checkbox" id="motel" name="motel" checked>
                     <span class="filters__checkbox-check"></span>
-                    Мотель
+                    <span class="filters__checkbox-input-name">Мотель</span>
                   </label>
                 </li>
                 <li class="filters__item">
                   <label class="filters__checkbox-label" for="apartments">
                     <input class="filters__checkbox-input" type="checkbox" id="apartments" name="apartments" checked>
                     <span class="filters__checkbox-check"></span>
-                    Апартаменты
+                    <span class="filters__checkbox-input-name">Апартаменты</span>
                   </label>
                 </li>
               </ul>
@@ -124,7 +124,7 @@
               </div>
             </fildset>
             <div class="filters__apply">
-              <button class="filters__show  filter-btn" type="submit">Показать</button>
+              <button class="filters__btn filters__show" type="submit">Показать</button>
             </div>
           </div>
         </div>
@@ -137,8 +137,8 @@
       <div class="hotels__sorting">
         <div class="hotels__sorting-result">
           <h2 class="visually-hidden">Сортировка результатов</h2>
-          <h3 class="hotels__sorting-result-title">Найдено:</h3><span
-            class="hotels__sorting-result-total">&nbsp;3</span>
+          <h3 class="hotels__sorting-result-title">Найдено:</h3>
+          <span class="hotels__sorting-result-total">3</span>
         </div>
         <div class="hotel__sotring-items">
           <span class="hotels__sorting-title">
@@ -161,7 +161,7 @@
             <li class="hotels__sorting-updown-item">
               <a class="hotels__sorting-updown-link link-up" href="#">
                 По возрастанию
-                <svg class="link-up__img link-up__img--active" xmlns="http://www.w3.org/2000/svg" width="11" height="10"
+                <svg class="link-up__img" xmlns="http://www.w3.org/2000/svg" width="11" height="10"
                   viewBox="0 0 11 10">
                   <path d="M5.5 0L0 10h11z" /></svg>
               </a>
@@ -169,7 +169,7 @@
             <li class="hotels__sorting-updown-item">
               <a class="hotels__sorting-updown-link link-down" href="#">
                 По убыванию
-                <svg class="link-down__img" xmlns="http://www.w3.org/2000/svg" width="11" height="10"
+                <svg class="link-down__img link-up__img--active" xmlns="http://www.w3.org/2000/svg" width="11" height="10"
                   viewBox="0 0 11 10">
                   <path d="M5.5 10L0 0h11" /></svg>
               </a>
@@ -202,7 +202,6 @@
           </div>
           <div class="hotels__item__rating">
             <div class="hotels__item__rating-stars stars">
-              <!-- font-size: 0; background-image: url("..//img/star.svg"); -->
               <span class="stars__item">*</span>
               <span class="stars__item">*</span>
               <span class="stars__item">*</span>
