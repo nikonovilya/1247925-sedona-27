@@ -51,7 +51,6 @@ h3 {
 
 /* МЕНЮ */
 
-
 .main-nav__menu-list {
   display: flex;
   padding: 0;
@@ -353,6 +352,7 @@ h3 {
 }
 
 .search__btn {
+  position: relative;
   background-color: #766357;
   color: #fff;
   width: 568px;
@@ -364,6 +364,7 @@ h3 {
   text-align: center;
   outline-color: #81b3d2;
   border: none;
+  z-index: 2501;
 }
 
 .search__btn:hover,
@@ -390,6 +391,46 @@ h3 {
   background-color: #fff;
 }
 
+.search__modal-window--invis {
+  animation-name: forminvis;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.search__modal-window--show {
+  aanimation-name: formshow;
+  animation-duration: 0.5 s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes forminvis {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+
+    transform: translateY(-50px);
+    opacity: 0;
+    
+  }
+}
+
+@keyframes formshow {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .search__modal-form {
   margin-left: 55px;
 }
@@ -413,6 +454,10 @@ h3 {
 
 .search__modal-form input::placeholder {
   color: #000;
+}
+
+.search__modal-form input[id="date-arrival"],
+.search__modal-form input[id="date-departure"] {
   padding-left: 12px;
 }
 
@@ -445,12 +490,12 @@ h3 {
 }
 
 .form__arrival-input {
-  width: 344px;
+  width: 332px;
   min-height: 38px;
 }
 
 .form__arrival-input:focus {
-  width: 340px;
+  width: 328px;
   min-height: 34px;
 }
 
@@ -472,12 +517,12 @@ h3 {
 }
 
 .form__departure-input {
-  width: 344px;
+  width: 332px;
   min-height: 38px;
 }
 
 .form__departure-input:focus {
-  width: 340px;
+  width: 328  px;
   min-height: 34px;
 }
 
