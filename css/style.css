@@ -1330,45 +1330,45 @@ input[type="checkbox"] + .filters__checkbox-check {
   margin-left: 72px;
 }
 
-.hotels__item-description {
+.hotels__item__description {
   margin-right: auto;
 }
 
-.hotels__item-description a {
+.hotels__item__description a {
   text-decoration: none;
 }
 
-.hotels__item-name {
+.description__name {
   margin-top: -6px;
   margin-bottom: 0;
   line-height: 26px;
 }
 
-.hotels__item-link {
+.description__name-link {
   color: #000;
   line-height: 26px;
   outline-color: #81b3d2;
 }
 
-.hotels__item-link:hover,
-.hotels__item-link:focus {
+.description__name-link:hover,
+.description__name-link:focus {
   color: #81b3d2;
 }
 
-.hotels__item-link:active {
+.description__name-link:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.hotels__item__info-type {
-  color: #333;    
-}
-
-.hotels__item__info {
+.description__info {
   display: inline-block;
   margin-top: 7px;
 }
 
-.hotels__item__info-btn {
+.description__info-type {
+  color: #333;    
+}
+
+.description__info-btn {
   display: block;
   width: 110px;
   height: 27px;
@@ -1381,27 +1381,27 @@ input[type="checkbox"] + .filters__checkbox-check {
   outline-color: #81b3d2; 
 }
 
-.hotels__item__info-btn:hover,
-.hotels__item__info-btn:focus {
+.description__info-btn:hover,
+.description__info-btn:focus {
   background-color: #669ec0;
 }
 
-.hotels__item__info-btn:active {
+.description__info-btn:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
 
-.hotels__item__details {
+.description__details {
   display: inline-block;  
 }
 
-.hotels__item__details-price {
+.description__details-price {
   display: block;
   color: #333;
   padding-left: 2px;
 }
 
-.hotels__item__details-btn {
+.description__details-btn {
   display: block;
   width: 142px;
   height: 27px;
@@ -1415,12 +1415,12 @@ input[type="checkbox"] + .filters__checkbox-check {
   outline-color: #81b3d2;
 }
 
-.hotels__item__details-btn:hover,
-.hotels__item__details-btn:focus {
+.description__details-btn:hover,
+.description__details-btn:focus {
   background-color: #604e43;
 }
 
-.hotels__item__details-btn:active {
+.description__details-btn:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
