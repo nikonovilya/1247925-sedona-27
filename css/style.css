@@ -376,7 +376,6 @@ h3 {
 .search__btn:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
-  outline-color: #503e33;
 }
 
 #map {
@@ -394,49 +393,40 @@ h3 {
   top: 293px;
   margin: 0 auto;
   background-color: #fff;
-}
-
-.search__modal-window--invis {
-  animation-name: forminvis;
-  animation-duration: 0.5s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-}
-
-.search__modal-window--show {
-  aanimation-name: formshow;
-  animation-duration: 0.5 s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-}
-
-@keyframes forminvis {
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-  }
   
+  -webkit-animation-name: animation;
+          animation-name: animation;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
 
+.search__modal-window--closed {
+  display: none;
+}
+
+@-webkit-keyframes animation {
+  0% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+  }
 
   100% {
-
-    transform: translateY(-50px);
-    opacity: 0;
-    display: none;
-    
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
-@keyframes formshow {
+@keyframes animation {
   0% {
-    transform: translateY(-50px);
-    opacity: 0;
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
   }
 
-
   100% {
-    transform: translateY(0);
-    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -510,7 +500,7 @@ h3 {
 }
 
 .form__arrival-input:focus {
-  width: 328px;
+  width: 330px;
   min-height: 34px;
 }
 
@@ -537,7 +527,7 @@ h3 {
 }
 
 .form__departure-input:focus {
-  width: 328px;
+  width: 330px;
   min-height: 34px;
 }
 
@@ -1187,7 +1177,7 @@ input[type="checkbox"] + .filters__checkbox-check {
   border-radius: 2px;
   cursor: pointer;
   transform: translateX(85px) translateY(5px);
-  transition: 0.3s ease;
+  outline-color: #81b3d2;
 }
 
 .filters__btn:hover {
