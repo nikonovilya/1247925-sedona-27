@@ -145,7 +145,7 @@ h3 {
   background-size: cover;
 }
 
-.offer__img {
+.offer-img {
   display: block;
   margin: 0 auto;
 }
@@ -396,10 +396,8 @@ h3 {
   
   -webkit-animation-name: animation;
           animation-name: animation;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
 }
 
 .search__modal-window--closed {
@@ -408,25 +406,39 @@ h3 {
 
 @-webkit-keyframes animation {
   0% {
-    -webkit-transform: scale(0.2);
-            transform: scale(0.2);
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+            opacity: 0;
+  }
+  
+  75% {
+      -webkit-transform: translateY(30px);
+              transform: translateY(30px);
+              opacity: 1;
   }
 
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
 @keyframes animation {
   0% {
-    -webkit-transform: scale(0.2);
-            transform: scale(0.2);
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+            opacity: 0;
   }
+  
+  75% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+            opacity: 1;
+}
 
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -766,7 +778,7 @@ h3 {
   background-color: #81b3d2;
 }
 
-.search__modal-form__btn {
+.form-btn {
   display: block;
   min-width: 458px;
   height: 58px;
@@ -782,13 +794,13 @@ h3 {
   border: none;
 }
 
-.search__modal-form__btn:hover,
-.search__modal-form__btn:focus {
+.form-btn:hover,
+.form-btn:focus {
   background-color: #669ec0;
   cursor: pointer;
 }
 
-.search__modal-form__btn:active {
+.form-btn:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
@@ -918,6 +930,10 @@ h3 {
 .developer__link {
   outline-color: #81b3d2;
   margin-top: 3px;
+}
+
+.developer__link:focus {
+  fill: #81b3d2;
 }
 
 .developer__link-img:hover,
@@ -1323,18 +1339,18 @@ input[type="checkbox"] + .filters__checkbox-check {
   border-bottom: 1px solid #f2f2f2;
 }
 
-.hotels__item__photo {
+.hotels__item-photo {
   width: 135px;
   height: 90px;
   padding-right: 30px;
   margin-left: 72px;
 }
 
-.hotels__item__description {
+.hotels__item-description {
   margin-right: auto;
 }
 
-.hotels__item__description a {
+.hotels__item-description a {
   text-decoration: none;
 }
 
@@ -1425,14 +1441,14 @@ input[type="checkbox"] + .filters__checkbox-check {
   background-color: #503e33;
 }
 
-.hotels__item__rating {
+.hotels__item-rating {
   margin-right: 73px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
-.hotels__item__rating-stars {
+.hotels__item-rating-stars {
   display: flex;
 }
 
@@ -1440,7 +1456,6 @@ input[type="checkbox"] + .filters__checkbox-check {
   margin-right: -1px;
   margin-top: -2px;
 }
-
 
 .stars__item {
   position: relative;
@@ -1454,7 +1469,7 @@ input[type="checkbox"] + .filters__checkbox-check {
   margin-left: 5px;
 }
 
-.hotels__item__rating-title {
+.hotels__item-rating-title {
   display: block;
   width: 110px;
   height: 27px;

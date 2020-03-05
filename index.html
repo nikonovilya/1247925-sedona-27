@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -48,7 +47,7 @@
       <section class="offer">
         <h1 class="visually-hidden">Седона, штат Аризона</h1>
         <div class="offer-wrapper">
-          <img class="offer__img" src="img/welcome.svg" width="459" height="353"
+          <img class="offer-img" src="img/welcome.svg" width="459" height="353"
             alt="Wellcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
         </div>
       </section>
@@ -151,7 +150,7 @@
           <!-- ФОРМА -->
 
           <div class="search__btn-wrapper">
-            <button class="search__btn btn" type="button">Поиск гостиницы в Седоне</button>
+            <button class="search__btn" type="button">Поиск гостиницы в Седоне</button>
           </div>
 
           <!-- КАРТА -->
@@ -160,13 +159,9 @@
             <script class="search__map-location">
               // Initialize and add the map
               function initMap() {
-                // The location of Uluru
-                var uluru = { lat: 34.7743044, lng: -111.9778249 };
-                // The map, centered at Uluru
-                var map = new google.maps.Map(
-                  document.getElementById('map'), { zoom: 8, center: uluru });
-                // The marker, positioned at Uluru
-                var marker = new google.maps.Marker({ position: uluru, map: map });
+                let uluru = { lat: 34.7743044, lng: -111.9778249 };
+                let map = new google.maps.Map(document.getElementById('map'), { zoom: 8, center: uluru });
+                let marker = new google.maps.Marker({ position: uluru, map: map });
               }
             </script>
             <script class="search__map-link" async defer
@@ -232,7 +227,7 @@
                   </div>
                 </div>
               </div>
-              <button class="search__modal-form__btn form__btn" type="submit" name="form-btn">
+              <button class="form-btn" type="submit" name="form-btn">
                 Найти
               </button>
             </form>
@@ -272,7 +267,7 @@
       </div>
     </footer>
   </div>
-  <script src="js/script.js"></script>v
+  <script src="js/script.js"></script>
 </body>
 
 </html>
