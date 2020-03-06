@@ -91,7 +91,7 @@ h3 {
   text-decoration: none;
   color: #000;
   margin-bottom: 2px;
-} 
+}
 
 .main-nav__item-link--active {
   color: #766357;
@@ -393,11 +393,11 @@ h3 {
   top: 293px;
   margin: 0 auto;
   background-color: #fff;
-  
+
   -webkit-animation-name: animation;
-          animation-name: animation;
+  animation-name: animation;
   -webkit-animation-duration: 0.4s;
-          animation-duration: 0.4s;
+  animation-duration: 0.4s;
 }
 
 .search__modal-window--closed {
@@ -407,38 +407,38 @@ h3 {
 @-webkit-keyframes animation {
   0% {
     -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-            opacity: 0;
+    transform: translateY(-100px);
+    opacity: 0;
   }
-  
+
   75% {
-      -webkit-transform: translateY(30px);
-              transform: translateY(30px);
-              opacity: 1;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+    opacity: 1;
   }
 
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
 @keyframes animation {
   0% {
     -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-            opacity: 0;
+    transform: translateY(-100px);
+    opacity: 0;
   }
-  
+
   75% {
     -webkit-transform: translateY(30px);
-            transform: translateY(30px);
-            opacity: 1;
-}
+    transform: translateY(30px);
+    opacity: 1;
+  }
 
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
@@ -999,7 +999,7 @@ h3 {
 .form-checkbox__label {
   position: relative;
   display: block;
-  padding-left:40px;
+  padding-left: 40px;
   color: #fff;
   cursor: pointer;
 }
@@ -1101,7 +1101,6 @@ input[type="checkbox"] + .form-checkbox__check {
 
 .form-price__label:first-child {
   margin-left: 4px;
-
 }
 
 .form-price__range {
@@ -1366,7 +1365,7 @@ input[type="checkbox"] + .form-checkbox__check {
 }
 
 .description__info-type {
-  color: #333;    
+  color: #333;
 }
 
 .description__info-btn {
@@ -1376,10 +1375,10 @@ input[type="checkbox"] + .form-checkbox__check {
   color: #fff;
   font-weight: 700;
   line-height: 27px;
-  background-color: #81b3d2;  
+  background-color: #81b3d2;
   text-align: center;
   margin-top: 14px;
-  outline-color: #81b3d2; 
+  outline-color: #81b3d2;
 }
 
 .description__info-btn:hover,
@@ -1393,7 +1392,7 @@ input[type="checkbox"] + .form-checkbox__check {
 }
 
 .description__details {
-  display: inline-block;  
+  display: inline-block;
 }
 
 .description__details-price {
