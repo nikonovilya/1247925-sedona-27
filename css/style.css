@@ -51,7 +51,7 @@ h3 {
 
 /* МЕНЮ */
 
-.main-nav__menu-list {
+.main-nav__list {
   display: flex;
   padding: 0;
   margin: 0;
@@ -190,19 +190,19 @@ h3 {
   text-align: center;
 }
 
-.advantages__title {
+.advantages__info-title {
   margin: 0;
   font-weight: 700;
   color: #fff;
   margin-top: 47px;
 }
 
-.advantages__number {
+.advantages__info-number {
   color: #fff;
   margin-top: 24px;
 }
 
-.advantages__text {
+.advantages__info-text {
   color: #fff;
   margin-top: 21px;
 }
@@ -211,7 +211,7 @@ h3 {
   order: 1;
 }
 
-.advantages__title--second {
+.advantages__info-title--second {
   margin-top: 45px;
 }
 
@@ -442,18 +442,18 @@ h3 {
   }
 }
 
-.search__modal-form {
+.modal-form {
   margin-left: 55px;
 }
 
-.search__modal-form label[for="date-arrival"],
-.search__modal-form label[for="date-departure"] {
+.modal-form label[for="date-arrival"],
+.modal-form label[for="date-departure"] {
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
 }
 
-.search__modal-form input[type="text"] {
+.modal-form input[type="text"] {
   background-color: #f2f2f2;
   border: none;
   color: #000;
@@ -463,26 +463,26 @@ h3 {
   text-transform: uppercase;
 }
 
-.search__modal-form input::placeholder {
+.modal-form input::placeholder {
   color: #000;
 }
 
-.search__modal-form input[id="date-arrival"],
-.search__modal-form input[id="date-departure"] {
+.modal-form input[id="date-arrival"],
+.modal-form input[id="date-departure"] {
   padding-left: 12px;
 }
 
-.search__modal-form input[id="date-arrival"]:focus,
-.search__modal-form input[id="date-departure"]:focus {
+.modal-form input[id="date-arrival"]:focus,
+.modal-form input[id="date-departure"]:focus {
   padding-left: 10px;
 }
 
-.search__modal-form input[type="text"]:hover {
+.modal-form input[type="text"]:hover {
   cursor: pointer;
   background-color: #ebebeb;
 }
 
-.search__modal-form input[type="text"]:focus {
+.modal-form input[type="text"]:focus {
   background-color: #fff;
   border: 2px solid #e5e5e5;
   outline: 0;
@@ -491,54 +491,54 @@ h3 {
 
 /* ПЕРВАЯ СТРОКА */
 
-.form__arrival {
+.modal-form__arrival {
   position: relative;
   padding-top: 55px;
 }
 
-.form__arrival-label {
+.modal-form__arrival-label {
   margin-right: 21px;
 }
 
-.form-arrival-wrapper {
+.modal-form__arrival-wrapper {
   position: relative;
   display: inline;
   width: 100%;
 }
 
-.form__arrival-input {
+.modal-form__arrival-input {
   width: 332px;
   min-height: 38px;
 }
 
-.form__arrival-input:focus {
+.modal-form__arrival-input:focus {
   width: 330px;
   min-height: 34px;
 }
 
 /* ВТОРАЯ СТРОКА */
 
-.form__departure {
+.modal-form__departure {
   padding-top: 27px;
   padding-bottom: 29px;
 }
 
-.form__departure-label {
+.modal-form__departure-label {
   margin-right: 17px;
 }
 
-.form__departure-wrapper {
+.modal-form__departure-wrapper {
   position: relative;
   display: inline;
   width: 100%;
 }
 
-.form__departure-input {
+.modal-form__departure-input {
   width: 332px;
   min-height: 38px;
 }
 
-.form__departure-input:focus {
+.modal-form__departure-input:focus {
   width: 330px;
   min-height: 34px;
 }
@@ -560,31 +560,31 @@ h3 {
   border: none;
 }
 
-.form__arrival-calendar-icon,
-.form__departure-calendar-icon {
+.calendar-icon--arrival,
+.calendar-icon--departure {
   fill: #cacaca;
 }
 
-.form__arrival-calendar-icon:hover,
-.form__departure-calendar-icon:hover,
-.form__arrival-calendar-icon:focus,
-.form__departure-calendar-icon:focus {
+.calendar-icon--arrival:hover,
+.calendar-icon--departure:hover,
+.calendar-icon--arrival:focus,
+.calendar-icon--departure:focus {
   fill: #000;
 }
 
-.form__arrival-calendar-icon:active,
-.form__departure-calendar-icon:active {
+.calendar-icon--arrival:active,
+.calendar-icon--departure:active {
   fill: #81b3d2;
 }
 
-.form__arrival-calendar,
-.form__departure-calendar {
+.modal-form__arrival-calendar,
+.modal-form__departure-calendar {
   border: none;
 }
 
 /* ТРЕТЬЯ СТРОКА */
 
-.form__number-people {
+.modal-form__number-people {
   display: flex;
   padding-bottom: 54px;
 }
@@ -609,8 +609,8 @@ h3 {
   margin-right: 26px;
 }
 
-.adults__btn-wrapper,
-.kids__btn-wrapper {
+.adults__btns-wrapper,
+.kids__btns-wrapper {
   display: flex;
 }
 
@@ -778,7 +778,7 @@ h3 {
   background-color: #81b3d2;
 }
 
-.form-btn {
+.modal-form-btn {
   display: block;
   min-width: 458px;
   height: 58px;
@@ -794,13 +794,13 @@ h3 {
   border: none;
 }
 
-.form-btn:hover,
-.form-btn:focus {
+.modal-form-btn:hover,
+.modal-form-btn:focus {
   background-color: #669ec0;
   cursor: pointer;
 }
 
-.form-btn:active {
+.modal-form-btn:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
@@ -819,7 +819,7 @@ h3 {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-.main-footer__contacts {
+.contacts {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -828,11 +828,11 @@ h3 {
   padding-bottom: 30px;
 }
 
-.main-footer__contacts:first-child {
+.contacts:first-child {
   margin-left: 123px;
 }
 
-.main-footer__contacts:last-child {
+.contacts:last-child {
   margin-right: 101px;
 }
 
@@ -963,40 +963,40 @@ h3 {
   padding-right: 73px;
 }
 
-.filters__options:nth-child(2) {
+.filters__form-options:nth-child(2) {
   margin-right: auto;
   margin-left: 118px;
 }
 
-.filters__fieldset {
+.filters__form-fieldset {
   border: none;
   padding: 0;
   margin: 0;
 }
 
-.filters__legend {
+.filters__form-legend {
   font-size: 16px;
   font-weight: 700;
   color: #fff;
   margin-bottom: 25px;
 }
 
-.filters__list {
+.filters__form-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.filters__item {
+.filters__form-item {
   padding: 0;
 }
 
-.filters__item:nth-child(2),
-.filters__item:last-child {
+.filters__form-item:nth-child(2),
+.filters__form-item:last-child {
   margin-top: 23px;
 }
 
-.filters__checkbox-label {
+.form-checkbox__label {
   position: relative;
   display: block;
   padding-left:40px;
@@ -1004,19 +1004,19 @@ h3 {
   cursor: pointer;
 }
 
-.filters__checkbox-label:first-child {
+.form-checkbox__label:first-child {
   bottom: 1px;
 }
 
-.filters__checkbox-label:first-child {
+.form-checkbox__label:first-child {
   bottom: 1px;
 }
 
-.filters__checkbox-label:last-child {
+.form-checkbox__label:last-child {
   padding-top: 1px;
 }
 
-.filters__checkbox-input {
+.form-checkbox__input {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -1029,16 +1029,16 @@ h3 {
   overflow: hidden;
 }
 
-.filters__checkbox-input:focus + .filters__checkbox-check {
+.form-checkbox__input:focus + .form-checkbox__check {
   outline: auto;
 }
 
-input[type="checkbox"]:checked + .filters__checkbox-check {
+input[type="checkbox"]:checked + .form-checkbox__check {
   background-image: url("..//img/checkbox-on.svg");
   background-repeat: no-repeat;
 }
 
-input[type="checkbox"] + .filters__checkbox-check {
+input[type="checkbox"] + .form-checkbox__check {
   position: absolute;
   top: 0;
   left: 0px;
@@ -1049,36 +1049,36 @@ input[type="checkbox"] + .filters__checkbox-check {
   cursor: pointer;
 }
 
-.filters__price {
+.form-price {
   min-width: 317px;
 }
 
-.filters__price-legend {
+.form-price__legend {
   font-size: 16px;
   font-weight: 700;
   color: #fff;
   margin-bottom: 10px;
 }
 
-.filters__price-value {
+.form-price__value {
   padding-top: 4px;
   padding-bottom: 6px;
   border: 2px solid #fff;
   border-radius: 2px;
 }
 
-.filters__price-label,
-.filters__price-input {
+.form-price__label,
+.form-price__input {
   position: relative;
   color: #fff;
   width: 157px;
 }
 
-.filters__price-label {
+.form-price__label {
   padding-left: 60px;
 }
 
-.filters__price-label:last-child:before {
+.form-price__label:last-child:before {
   content: "";
   position: absolute;
   display: block;
@@ -1089,7 +1089,7 @@ input[type="checkbox"] + .filters__checkbox-check {
   background-color: #fff;
 }
 
-.filters__price-input {
+.form-price__input {
   background-color: transparent;
   padding: 4px 0 0 0;
   margin: 0;
@@ -1099,47 +1099,46 @@ input[type="checkbox"] + .filters__checkbox-check {
   outline-color: #81b3d2;
 }
 
-.filters__price-label:first-child {
+.form-price__label:first-child {
   margin-left: 4px;
 
 }
 
-.filters__price-range {
+.form-price__range {
   position: relative;
   margin-top: 20px;
 }
 
-.filters__price-scale {
+.form-price__scale {
   position: relative;
   height: 2px;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.filters__price-scale-value {
+.form-price__scale-value {
   position: absolute;
-  width: 80%;
   height: 100%;
   background-color: #fff;
 }
 
-.filters__price-control {
+.form-price__control {
   font-size: 0;
 }
 
-.filters__price-control:hover::before,
-.filters__price-control:focus::before,
-.filters__price-control:hover::after,
-.filters__price-control:focus::after {
+.form-price__control:hover::before,
+.form-price__control:focus::before,
+.form-price__control:hover::after,
+.form-price__control:focus::after {
   transform: scale(1.1);
 }
 
-.filters__price-control--min:focus::before,
-.filters__price-control--max:focus::before {
+.form-price__control--min:focus::before,
+.form-price__control--max:focus::before {
   outline: inherit;
   outline-color: #81b3d2;
 }
 
-.filters__price-control--min::before {
+.form-price__control--min::before {
   content: "";
   position: absolute;
   width: 4px;
@@ -1153,7 +1152,7 @@ input[type="checkbox"] + .filters__checkbox-check {
   cursor: pointer;
 }
 
-.filters__price-control--max::before {
+.form-price__control--max::before {
   content: "";
   position: absolute;
   width: 4px;
@@ -1167,21 +1166,7 @@ input[type="checkbox"] + .filters__checkbox-check {
   cursor: pointer;
 }
 
-.filter-btn {
-  display: block;
-  width: 133px;
-  height: 32px;
-  color: #fff;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0 auto;
-  background-color: transparent;
-  border: 2px solid #fff;
-  border-radius: 2px;
-  outline-color: #81b3d2;
-}
-
-.filters__btn {
+.filters__apply-btn {
   display: block;
   width: 137px;
   height: 36px;
@@ -1196,12 +1181,12 @@ input[type="checkbox"] + .filters__checkbox-check {
   outline-color: #81b3d2;
 }
 
-.filters__btn:hover {
+.filters__apply-btn:hover {
   color: #000;
   background-color: #fff;
 }
 
-.filters__btn:active {
+.filters__apply-btn:active {
   color: #000;
   background-color: #fff;
 }
@@ -1215,16 +1200,16 @@ input[type="checkbox"] + .filters__checkbox-check {
   margin-left: 71px;
 }
 
-.hotels__sorting-result {
+.sorting-result {
   padding-bottom: 2px;
   margin-right: 47px;
 }
 
-.hotels__sorting-result-title {
+.sorting-result__title {
   display: inline;
 }
 
-.hotels__sorting-result-total {
+.sorting-result__total {
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
@@ -1281,7 +1266,7 @@ input[type="checkbox"] + .filters__checkbox-check {
   border-bottom: none;
 }
 
-.hotels__sorting-updown-list {
+.sorting-updown__list {
   display: flex;
   list-style: none;
   margin: 0;
@@ -1290,7 +1275,7 @@ input[type="checkbox"] + .filters__checkbox-check {
   margin-right: 73px;
 }
 
-.hotels__sorting-updown-link {
+.sorting-updown__link {
   font-size: 0;
   outline-color: #81b3d2;
 }
@@ -1316,7 +1301,7 @@ input[type="checkbox"] + .filters__checkbox-check {
   fill: #81b3d2;
 }
 
-.link-up__img--active {
+.link-down__img--active {
   fill: #81b3d2;
 }
 
@@ -1448,7 +1433,7 @@ input[type="checkbox"] + .filters__checkbox-check {
   align-items: flex-end;
 }
 
-.hotels__item-rating-stars {
+.hotel-rating__stars {
   display: flex;
 }
 
@@ -1469,7 +1454,7 @@ input[type="checkbox"] + .filters__checkbox-check {
   margin-left: 5px;
 }
 
-.hotels__item-rating-title {
+.hotel-rating__title {
   display: block;
   width: 110px;
   height: 27px;
