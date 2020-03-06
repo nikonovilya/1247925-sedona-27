@@ -16,7 +16,7 @@
     <header class="main-header">
       <nav class="main-nav">
         <div class="main-nav__menu">
-          <ul class="main-nav__list">
+          <ul class="main-nav__menu-list">
             <li class="main-nav__item">
               <a class="main-nav__item-link" href="#">Информация</a>
             </li>
@@ -67,9 +67,9 @@
       <section class="advantages  advantages--first">
         <h2 class="visually-hidden">Преимущества Седоны</h2>
         <div class="advantages__info advantages__info--first">
-          <h3 class="advantages__info-title advantages__info-title--first">Настоящий<br> городок</h3>
-          <span class="advantages__info-number advantages__info-number--first">— №1 —</span>
-          <p class="advantages__info-text advantages__info-text--first">Седона — не аттракцион для туристов,<br> там течет своя
+          <h3 class="advantages__title advantages__title--first">Настоящий<br> городок</h3>
+          <span class="advantages__number advantages__number--first">— №1 —</span>
+          <p class="advantages__text advantages__text--first">Седона — не аттракцион для туристов,<br> там течет своя
             жизнь</p>
         </div>
         <div class="advantages__img  advantages__img--first">
@@ -102,9 +102,9 @@
       <section class="advantages  advantages--second">
         <h2 class="visually-hidden">Преимущества Седоны</h2>
         <div class="advantages__info advantages__info--second">
-          <h3 class="advantages__info-title advantages__info-title--second">Там есть<br> мост дьявола</h3>
-          <span class="advantages__info-number advantages__info-number--second">— №2 —</span>
-          <p class="advantages__info-text advantages__info-text--second">Да, по нему можно пройти! Если, конечно,<br> вы
+          <h3 class="advantages__title advantages__title--second">Там есть<br> мост дьявола</h3>
+          <span class="advantages__number advantages__number--second">— №2 —</span>
+          <p class="advantages__text advantages__text--second">Да, по нему можно пройти! Если, конечно,<br> вы
             осмелитесь</p>
         </div>
         <div class="advantages__img  advantages__img--second">
@@ -172,14 +172,14 @@
           <!-- МОДАЛЬНОЕ ОКНО -->
 
           <div class="search__modal-window">
-            <form class="search__modal-form modal-form" action="#" method="POST">
-              <div class="modal-form__arrival">
-                <label class="modal-form__arrival-label" for="date-arrival">Дата заезда:</label>
-                <div class="modal-form__arrival-wrapper">
-                  <input class="modal-form__arrival-input" type="text" id="date-arrival" name="date-arrival"
+            <form class="search__modal-form form" action="#" method="POST">
+              <div class="form__arrival">
+                <label class="form__arrival-label" for="date-arrival">Дата заезда:</label>
+                <div class="form-arrival-wrapper">
+                  <input class="form__arrival-input" type="text" id="date-arrival" name="date-arrival"
                     placeholder="24 апреля 2017">
-                  <button class="modal-form__arrival-calendar calendar" type="button" name="calendar">
-                    <svg class="calendar-icon calendar-icon--arrival" xmlns="http://www.w3.org/2000/svg" width="21"
+                  <button class="form__arrival-calendar calendar" type="button" name="calendar">
+                    <svg class="form__arrival-calendar-icon calendar-icon" xmlns="http://www.w3.org/2000/svg" width="21"
                       height="22" viewBox="0 0 21 22">
                       <path
                         d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
@@ -189,13 +189,13 @@
                   </button>
                 </div>
               </div>
-              <div class="modal-form__departure">
-                <label class="modal-form__departure-label" for="date-departure">Дата выезда:</label>
-                <div class="modal-form__departure-wrapper">
-                  <input class="modal-form__departure-input" type="text" id="date-departure" name="date-departure"
+              <div class="form__departure">
+                <label class="form__departure-label" for="date-departure">Дата выезда:</label>
+                <div class="form__departure-wrapper">
+                  <input class="form__departure-input" type="text" id="date-departure" name="date-departure"
                     placeholder="4 июля 2017">
-                  <button class="modal-form__departure-calendar calendar" type="button" name="calendar">
-                    <svg class="calendar-icon calendar-icon--departure" xmlns="http://www.w3.org/2000/svg"
+                  <button class="form__departure-calendar calendar" type="button" name="calendar">
+                    <svg class="form__departure-calendar-icon calendar-icon" xmlns="http://www.w3.org/2000/svg"
                       width="21" height="22" viewBox="0 0 21 22">
                       <path
                         d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
@@ -205,21 +205,21 @@
                   </button>
                 </div>
               </div>
-              <div class="modal-form__number-people">
-                <div class="modal-form__number-adults adults">
+              <div class="form__number-people">
+                <div class="form__number-adults adults">
                   <label class="adults__label" for="adults">Взрослые:</label>
-                  <div class="adults__btns">
-                    <div class="adults__btns-wrapper">
+                  <div class="adults__btn">
+                    <div class="adults__btn-wrapper">
                       <button class="adults__btn--low" type="button" aria-label="минус"></button>
                       <input class="adults__btn--number" type="text" id="adults" name="adults" value="2">
                       <button class="adults__btn--hight" type="button" aria-label="плюс"></button>
                     </div>
                   </div>
                 </div>
-                <div class="modal-form__number-kids kids">
+                <div class="form__number-kids kids">
                   <label class="kids__label" for="adults">Дети:</label>
-                  <div class="kids__btns">
-                    <div class="kids__btns-wrapper">
+                  <div class="kids__btn">
+                    <div class="kids__btn-wrapper">
                       <button class="kids__btn--low" type="button" aria-label="минус"></button>
                       <input class="kids__btn--number" type="text" id="kids" name="kids" value="0">
                       <button class="kids__btn--hight" type="button" aria-label="плюс"></button>
@@ -227,7 +227,7 @@
                   </div>
                 </div>
               </div>
-              <button class="modal-form-btn" type="submit" name="form-btn">
+              <button class="form-btn" type="submit" name="form-btn">
                 Найти
               </button>
             </form>
@@ -239,8 +239,8 @@
     <!-- ПОДВАЛ -->
 
     <footer class="main-footer main-footer--first">
-      <div class="main-footer__contacts contacts">
-        <div class="contacts__left-column">
+      <div class="main-footer__contacts">
+        <div class="main-footer__contacts__left-column contacts">
           <div class="contacts__instagram">
             <a class="contacts__instagram-link" href="#">#VisitSedona</a>
           </div>
@@ -248,12 +248,12 @@
             <a class="contacts__phone-link" href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
           </div>
         </div>
-        <div class="contacts__social social">
+        <div class="main-footer__contacts__social social">
           <a class="social__link social__link--tw" href="#" target="_blank" title="Наша страница в Twitter"></a>
           <a class="social__link social__link--fb" href="#" target="_blank" title="Наша страница в Facebook"></a>
           <a class="social__link social__link--ytb" href="#" target="_blank" title="Наша страница на YouTube"></a>
         </div>
-        <div class="contacts__developer developer">
+        <div class="main-footer__contacts__developer developer">
           <span class="developer__text">Website by</span>
           <a class="developer__link" href="https://htmlacademy.ru/intensive/htmlcss">
             <svg class="developer__link-img" xmlns="http://www.w3.org/2000/svg" width="115" height="41"
@@ -267,7 +267,7 @@
       </div>
     </footer>
   </div>
-  <script class="modal-form__script" src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
