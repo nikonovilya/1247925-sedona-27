@@ -1206,8 +1206,7 @@ input[type="checkbox"] + .form-checkbox__check {
 }
 
 .form-price__label--min {
-  margin-left: 65px;
-    
+  margin-left: 65px;    
 } 
 
 .form-price__label--max {
