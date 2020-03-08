@@ -734,7 +734,7 @@ h3 {
   background-color: #81b3d2;
 }
 
-.adults__btn-wrapper input[type="text"]:focus {
+.adults__btns-wrapper input[type="text"]:focus {
   width: 34px;
   height: 34px;
 }
@@ -831,7 +831,7 @@ h3 {
   padding: 0;
 }
 
-.kids__btn-wrapper input[type="text"]:focus {
+.kids__btns-wrapper input[type="text"]:focus {
   width: 34px;
   height: 34px;
 }
@@ -878,7 +878,7 @@ h3 {
   background-color: #81b3d2;
 }
 
-.modal-form-btn {
+.modal-form__btn {
   display: block;
   min-width: 458px;
   height: 58px;
@@ -894,13 +894,13 @@ h3 {
   border: none;
 }
 
-.modal-form-btn:hover,
-.modal-form-btn:focus {
+.modal-form__btn:hover,
+.modal-form__btn:focus {
   background-color: #669ec0;
   cursor: pointer;
 }
 
-.modal-form-btn:active {
+.modal-form__btn:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
