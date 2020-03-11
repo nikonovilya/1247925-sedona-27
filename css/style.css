@@ -90,11 +90,6 @@ h3 {
   outline-color: #81b3d2;
 }
 
-.main-nav__item-link:focus {
-outline: 3px solid #81b3d2;
-}
-
-
 .main-nav__item-link--active {
   color: #766357;
   cursor: auto;
