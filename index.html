@@ -157,16 +157,7 @@
           <!-- КАРТА -->
 
           <div class="search__map" id="map">
-            <script class="search__map-location">
-              function initMap() {
-                let uluru = { lat: 34.7743044, lng: -111.9778249 };
-                let map = new google.maps.Map(document.getElementById('map'), { zoom: 8, center: uluru });
-                let marker = new google.maps.Marker({ position: uluru, map: map });
-              }
-            </script>
-            <script class="search__map-link" async defer
-              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3qSplSsNm1Cb8pfaO-b2k9iNcGoS0VOY&callback=initMap">
-              </script>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A79008684a37cb2b7d5f204b493537972636ea721b0b89fa97afac96c146db95f&amp;width=1200&amp;height=593&amp;lang=ru_RU&amp;scroll=true"></script>
           </div>
 
           <!-- МОДАЛЬНОЕ ОКНО -->
