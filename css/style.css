@@ -442,8 +442,8 @@ h3 {
 
   -webkit-animation-name: animation;
   animation-name: animation;
-  -webkit-animation-duration: 0.4s;
-  animation-duration: 0.4s;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
 }
 
 .search__modal-window--closed {
