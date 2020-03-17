@@ -1450,11 +1450,11 @@ input[type="checkbox"] + .form-checkbox__check {
 
 .sorting-updown__link {
   font-size: 0;
+  display: inline-block;
 }
 
 .sorting-updown__link:focus {
   outline: 2px solid #81b3d2;
-  outline-offset: 3px;
 }
 
 .link-down {
