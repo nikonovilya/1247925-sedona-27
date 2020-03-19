@@ -163,8 +163,10 @@ h3 {
   margin: 0 auto;
 }
 .about__info-title {
-  margin: 0 0 27px 0;
+  font-size: 21px;
   line-height: 26px;
+  font-weight: 700;
+  margin: 0 0 27px 0;
 }
 .about__info-text {
   margin: 0;
@@ -208,7 +210,16 @@ h3 {
   margin: 0;
   font-weight: 700;
   color: #fff;
+}
+
+.advantages__info-title--first {
   margin-top: 47px;
+  max-width: 130px;
+}
+
+.advantages__info-title--second {
+  margin-top: 45px;
+  max-width: 150px;
 }
 
 .advantages__info-number {
@@ -221,14 +232,18 @@ h3 {
   margin-top: 21px;
 }
 
+.advantages__info-text--first {
+  max-width: 280px;
+}
+
+.advantages__info-text--second {
+  max-width: 310px;
+}
+
 .advantages__info--second {
   -webkit-box-ordinal-group: 2;
   -ms-flex-order: 1;
   order: 1;
-}
-
-.advantages__info-title--second {
-  margin-top: 45px;
 }
 
 .advantages__img {
@@ -345,6 +360,7 @@ h3 {
 
 .reasons__item-title {
   margin: 0;
+  max-width: 120px;
 }
 
 .reasons__item-number {
@@ -354,6 +370,7 @@ h3 {
 .reasons__item-text {
   padding-top: 21px;
   margin: 0;
+  max-width: 258px;
 }
 
 /* ПОИСК ГОСТИНИЦЫ */
@@ -429,6 +446,18 @@ h3 {
   background-color: #503e33;
 }
 
+/* КАРТА */
+
+.search__map {
+  width: 1200px;
+  height: 593px;
+  background-image: url("..//img/background-map.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #81b3d2;
+  overflow: hidden;
+}
+
 /* МОДАЛЬНОЕ ОКНО */
 
 .search__modal-window {
@@ -442,8 +471,8 @@ h3 {
 
   -webkit-animation-name: animation;
   animation-name: animation;
-  -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
 }
 
 .search__modal-window--closed {
@@ -1163,11 +1192,6 @@ h3 {
   outline-offset: 0.3em;
 }
 
-input[type="checkbox"]:checked + .form-checkbox__check {
-  background-image: url("..//img/checkbox-on.svg");
-  background-repeat: no-repeat;
-}
-
 input[type="checkbox"] + .form-checkbox__check {
   position: absolute;
   top: 0;
@@ -1177,6 +1201,19 @@ input[type="checkbox"] + .form-checkbox__check {
   background-image: url("..//img/checkbox-off.svg");
   background-repeat: no-repeat;
   cursor: pointer;
+}
+
+input[type="checkbox"]:checked + .form-checkbox__check {
+  background-image: url("..//img/checkbox-on.svg");
+  background-repeat: no-repeat;
+}
+
+input[type="checkbox"]:disabled + .form-checkbox__check {
+    background-image: url("..//img/checkbox-off-disabled.svg");
+}
+
+input[type="checkbox"]:checked:disabled + .form-checkbox__check {
+  background-image: url("..//img/checkbox-on-disabled.svg");
 }
 
 .form-price {
@@ -1434,7 +1471,6 @@ input[type="checkbox"] + .form-checkbox__check {
 }
 
 .hotels__sorting-updown {
-  margin-top: 3px;
   margin-left: auto;
 }
 
@@ -1453,6 +1489,7 @@ input[type="checkbox"] + .form-checkbox__check {
   height: 10px;
   font-size: 0;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .sorting-updown__link:focus {
@@ -1460,8 +1497,13 @@ input[type="checkbox"] + .form-checkbox__check {
   outline-offset: 3px;
 }
 
+.link-up {
+  padding-bottom: 3px;
+}
+
 .link-down {
-  margin-left: 12px;
+  margin-left: 13px;
+  padding-bottom: 5px;
 }
 
 .link-up__img,
@@ -1552,6 +1594,7 @@ input[type="checkbox"] + .form-checkbox__check {
 
 .description__info {
   display: inline-block;
+  vertical-align: bottom;
   margin-top: 7px;
 }
 
@@ -1588,6 +1631,7 @@ input[type="checkbox"] + .form-checkbox__check {
 
 .description__details {
   display: inline-block;
+  vertical-align: bottom;
 }
 
 .description__details-price {
