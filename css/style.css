@@ -1209,7 +1209,7 @@ input[type="checkbox"]:checked + .form-checkbox__check {
 }
 
 input[type="checkbox"]:disabled + .form-checkbox__check {
-    background-image: url("..//img/checkbox-off-disabled.svg");
+  background-image: url("..//img/checkbox-off-disabled.svg");
 }
 
 input[type="checkbox"]:checked:disabled + .form-checkbox__check {
@@ -1364,9 +1364,9 @@ input[type="checkbox"]:checked:disabled + .form-checkbox__check {
   border-radius: 2px;
   cursor: pointer;
 
-  -webkit-transform: translateX(85px) translateY(5px);
-  -ms-transform: translateX(85px) translateY(5px);
-  transform: translateX(85px) translateY(5px);
+  -webkit-transform: translateX(85px) translateY(30px);
+  -ms-transform: translateX(85px) translateY(30px);
+  transform: translateX(85px) translateY(30px);
 }
 
 .filters__apply-btn:hover {
